@@ -1,0 +1,105 @@
+.container {
+  display: block;
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  margin: 20px 100px;
+  padding: 0 auto;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  width: 982px;
+  height: 60px;
+  background: #121212;
+}
+/*Logo başlangıç*/
+.page-header {
+  display: flex;
+  width: 1440px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 21px 50px;
+
+  gap: 20px;
+}
+
+.header-logo {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.16667;
+  letter-spacing: 0.03em;
+
+  color: #fff;
+  text-decoration: none;
+}
+
+/*Logo bitiş*/
+/* Menü başlangıç*/
+.menu .menu-ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding-right: 50px;
+}
+
+.menu .menu-ul .menu-item {
+  list-style-type: none;
+}
+
+.menu .menu-ul .menu-item a {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #fff;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+
+  text-decoration: none;
+  cursor: pointer;
+  transition: text-decoration 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu .menu-ul .menu-item:first-child:hover,
+.menu .menu-ul .menu-item:first-child:active {
+  display: inline;
+  color: #bea69e;
+}
+.menu .menu-ul .menu-item:first-child::after {
+  display: flex;
+
+  width: 48px;
+  height: 4px;
+  background-color: #bea69e;
+  border-radius: 2px;
+  bottom: -24px;
+}
+
+.menu .menu-ul .menu-item a:hover {
+  display: inline;
+  color: #bea69e;
+}
+
+/* Menü bitiş*/
+/*Sign up başlangıç*/
+.header-button {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 156%;
+  text-transform: uppercase;
+  color: #121212;
+  border-radius: 12px;
+  padding: 16px 84px;
+
+  height: 60px;
+  background: #ffffff;
+}
+.header-button:hover {
+  color: #bea69e;
+  background: #1d1d1d;
+  border-radius: none;
+}
+/*Sign up bitiş*/
