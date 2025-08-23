@@ -15,7 +15,6 @@
   display: flex;
   width: 1440px;
   height: 60px;
-  display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 0 auto;
@@ -103,3 +102,109 @@
   border-radius: none;
 }
 /*Sign up bitiş*/
+/* Mobile Menu */
+@media screen and (max-width: 375px) {
+  .container {
+    width: 335px;
+    height: 50px;
+  }
+  .page-header {
+    display: flex;
+    width: 335px;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .header-logo {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.16667;
+    letter-spacing: 0.03em;
+    color: #fff;
+    text-decoration: none;
+  }
+  .mobile-menu .mobile-menu-close {
+    fill: #fff;
+
+    width: 32px;
+    height: 22px;
+    top: 14px;
+    right: 14px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .mobile-menu .mobile-menu-close .icon {
+    width: 32px;
+    height: 22px;
+    fill: #fff;
+  }
+  .mobile-nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0;
+    margin-top: 36px;
+  }
+
+  .mobile-nav-link {
+    width: 218px;
+    height: 812px;
+    top: 180px;
+    right: 20px;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #121212;
+    width: 218px;
+    height: 812px;
+    background: #bea69e;
+    text-decoration: none;
+  }
+  .mobile-nav-link:hover,
+  .mobile-nav-link:focus {
+    color: #121212;
+  }
+}
+.mobile-nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0;
+  margin-top: 36px;
+}
+
+.mobile-nav-link:hover,
+.mobile-nav-link:focus {
+  color: #121212;
+}
+
+.mobile-menu .mobile-menu-close {
+  position: absolute;
+  fill: #fff;
+
+  width: 32px;
+  height: 22px;
+  top: 14px;
+  right: 14px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile-menu .mobile-menu-close .icon {
+  width: 32px;
+  height: 22px;
+  fill: #fff;
+}
+
+.mobile-menu.is-open {
+  transform: translateX(0);
+}
