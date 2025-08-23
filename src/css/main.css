@@ -1,6 +1,311 @@
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
 .dm-sans-normal {
   font-family: "DM Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 12;
   font-style: normal;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  padding: 60px 0 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(circle, #333333 1px, transparent 1px);
+  background-size: 20px 20px;
+  opacity: 0.3;
+  z-index: 1;
+}
+
+.footer > * {
+  position: relative;
+  z-index: 2;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+/* Left Section - Logo ve Adres kısmı */
+.footer-left {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-logo h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.footer-contact {
+  color: #cccccc;
+}
+
+.phone-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.phone-link:hover {
+  color: #4CAF50;
+}
+
+.address {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #cccccc;
+}
+
+/* Center Section - Navigation */
+.footer-center {
+  flex: 1;
+  display: flex;
+  gap: 60px;
+  min-width: 300px;
+}
+
+.footer-column {
+  flex: 1;
+}
+
+.footer-nav {
+  list-style: none;
+}
+
+.footer-nav li {
+  margin-bottom: 12px;
+}
+
+.footer-nav a {
+  color: #cccccc;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+  color: #ffffff;
+}
+
+/* Right Section - Email Form */
+.footer-right {
+  flex: 1;
+  max-width: 350px;
+  min-width: 300px;
+}
+
+.email-form {
+  width: 100%;
+}
+
+.form-group {
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 50px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.email-input {
+  flex: 1;
+  padding: 15px 20px;
+  border: none;
+  background: transparent;
+  font-size: 14px;
+  color: #333;
+  outline: none;
+}
+
+.email-input::placeholder {
+  color: #999;
+}
+
+.email-input:invalid {
+  box-shadow: none;
+}
+
+.submit-btn {
+  background-color: #333333;
+  color: #ffffff;
+  border: none;
+  padding: 15px 30px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.submit-btn:hover {
+  background-color: #555555;
+}
+
+/* Alt Section */
+.footer-bottom {
+  max-width: 1200px;
+  margin: 40px auto 0;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  border-top: 1px solid #333333;
+  padding-top: 30px;
+}
+
+.footer-legal {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.footer-legal a {
+  color: #cccccc;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.footer-legal a:hover {
+  color: #ffffff;
+}
+
+.footer-copyright p {
+  color: #cccccc;
+  font-size: 14px;
+  text-align: right;
+  line-height: 1.4;
+}
+
+/* Sosyal Linkler */
+.social-links {
+  max-width: 1200px;
+  margin: 20px auto 0;
+  padding: 0 20px;
+  border-top: 1px solid #333333;
+  padding-top: 20px;
+}
+
+.social-links ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.social-links a {
+  color: #cccccc;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #ffffff;
+}
+
+/* Responsive Olması için */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+  
+  .footer-center {
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+  }
+  
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+  
+  .footer-copyright p {
+    text-align: center;
+  }
+  
+  .social-links ul {
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .form-group {
+    flex-direction: column;
+    border-radius: 10px;
+  }
+  
+  .email-input {
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .submit-btn {
+    border-radius: 0 0 10px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 40px 0 20px;
+  }
+  
+  .footer-container {
+    padding: 0 15px;
+    gap: 25px;
+  }
+  
+  .footer-logo h2 {
+    font-size: 20px;
+  }
+  
+  .social-links ul {
+    flex-direction: column;
+    gap: 15px;
+  }
 }
