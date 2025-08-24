@@ -13,7 +13,7 @@ body {
   margin: 0 auto; /* wrapper'ı ortala */
   padding: 0 20px; /* içte 20px nefes alanı */
   box-sizing: border-box; /* padding+border genişliğe dahil */
-  border: #ffffff 1px solid;
+  border: #ffffff 1px solid; /* burası görebilmek için var. ana şablona taşıdığında köşeyi sil - bu satırı kaldır */
 }
 .courses-wrapper ul,
 ol,
