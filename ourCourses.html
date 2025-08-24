@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FocusFrame 2.0</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./src/css/courses.css" />
+  </head>
+  <body>
+    <!--Our Courses Kısmına Başlıyoruz-->
+    <section>
+      <!-- Genel kapsayıcı div ekliyoruz class courses-wrapper -->
+      <div class="courses-wrapper">
+        <!-- Başlık ve kartları kapsayan ana blok -->
+        <div class="courses-main">
+          <!-- Başlık Kısmı -->
+          <div class="courses-top">
+            <div class="courses-top-title">Our <span>Courses</span></div>
+            <div class="courses-top-desc">
+              At our photography school, we offer a variety of courses that
+              cover all aspects of this fascinating art. Regardless of your
+              experience or skill level, we have courses to suit your needs and
+              goals.
+            </div>
+          </div>
+
+          <!-- Kart Kısmı -->
+          <ul>
+            <li>
+              <div class="courses-cards-main">
+                <!-- top ile desc i 2 farklı div yapıp birini yukarı diğeriniaşağı ya space-between ile gönderdik -->
+                <div class="courses-card-top">
+                  <div class="courses-card-numberline">
+                    <!-- burada numara ve iconu 2 div yapıp space-between ile 2 uca gönderdik -->
+                    <div class="courses-card-number">01</div>
+                    <div class="courses-card-svg">
+                      <svg
+                  class="vektor-ok"
+                  viewBox="0 0 32 32"
+                  width="32"
+                  height="32"
+                >                  
+                  <use href="./src/images/iconlar.svg#icon-arrow"></use>
+                </svg>
+                    </div>
+                  </div>
+                  <div class="courses-card-title">Basics of photography</div>
+                </div>
+                <div class="courses-card-desc">
+                  During this course, you will be able to familiarize yourself
+                  with different types of cameras, learn the basics of
+                  composition.
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="courses-cards-main">
+                <div class="courses-card-top">
+                  <div class="courses-card-numberline">
+                    <div class="courses-card-number">02</div>
+                    <div class="courses-card-svg">
+                      <svg
+                  class="vektor-ok"
+                  viewBox="0 0 32 32"
+                  width="32"
+                  height="32"
+                >                  
+                  <use href="./src/images/iconlar.svg#icon-arrow"></use>
+                </svg>
+                    </div>
+                  </div>
+                  <div class="courses-card-title">Landscape photography</div>
+                </div>
+                <div class="courses-card-desc">
+                  In this course, you'll learn how to choose the right angles,
+                  frame landscapes, and create depth and perspective in your
+                  images.
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="courses-cards-main">
+                <div class="courses-card-top">
+                  <div class="courses-card-numberline">
+                    <div class="courses-card-number">03</div>
+                    <div class="courses-card-svg">
+                      <svg
+                  class="vektor-ok"
+                  viewBox="0 0 32 32"
+                  width="32"
+                  height="32"
+                >                  
+                  <use href="./src/images/iconlar.svg#icon-arrow"></use>
+                </svg>
+                    </div>
+                  </div>
+                  <div class="courses-card-title">Portrait photography</div>
+                </div>
+                <div class="courses-card-desc">
+                  During this course, you will learn to choose the right
+                  lighting, reproduce the mood and expressions on the faces of
+                  the models.
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

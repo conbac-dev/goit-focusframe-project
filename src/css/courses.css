@@ -1,0 +1,237 @@
+body {
+  margin: 0;
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  background-color: #121212;
+  color: #ffffff;
+  letter-spacing: -2%;
+}
+
+.courses-wrapper {
+  width: 100%;
+  max-width: 374px;
+  margin: 0 auto; /* wrapper'ı ortala */
+  padding: 0 20px; /* içte 20px nefes alanı */
+  box-sizing: border-box; /* padding+border genişliğe dahil */
+  border: #ffffff 1px solid;
+}
+.courses-wrapper ul,
+ol,
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.courses-main {
+  display: flex;
+  flex-direction: column;
+  width: clamp(0px, 100%, 342px); /* 342'yi geçme, küçükte %100 kal */
+  margin: 20px auto; /* DÜZELTİLDİ: yatayda ortala */
+
+  box-sizing: border-box;
+  overflow-wrap: anywhere;
+}
+.courses-top {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+.courses-top-title {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 32px;
+  color: #ffffff;
+  letter-spacing: -4%;
+}
+.courses-top-title span {
+  color: #ff6e27;
+}
+.courses-top-desc {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+}
+.svg-fon{
+  width: 32px;
+  height: 32px;
+  fill: #1d1d1d;
+}
+
+.svg-kosegen{
+  width: 10px;
+  height: 10px;
+  size: 7px;
+}
+.courses-cards-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 335px;
+  opacity: 1;
+  border-radius: 12px;
+  border-width: 1px;
+  background: linear-gradient(180deg, #060707 0%, #1d1d1d 100%);
+  border: 1px solid #ffffff33;
+  box-sizing: border-box;
+  margin-top: 20px;
+}
+.courses-card-top {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 8px;
+}
+.courses-card-numberline {
+  display: flex;
+  max-width: 279px;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 28px 28px 28px 28px;
+}
+.courses-card-number {
+  opacity: 0.4;
+}
+.courses-card-title {
+  max-width: 279px;
+  margin: 28px 28px 28px 28px;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 32px;
+  letter-spacing: 0%;
+}
+.courses-card-desc {
+  max-width: 279px;
+  margin: 28px 28px 28px 28px;
+
+  opacity: 0.5;
+}
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .courses-cards-main {
+    width: 335px;
+    height: 398px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .courses-wrapper {
+    max-width: 760px; 
+    padding: 0 20px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  .courses-main {
+    width: 100%;
+    max-width: 704px; /* 335 + 335 + 20(gap) = 690 → 704 güvenli */
+    margin: 20px auto;
+  }
+
+  .courses-main > ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* kartlar arası boşluk */
+    justify-content: left;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .courses-main > ul > li {
+    flex: 0 1 335px; /* taban genişlik 335px */
+    display: flex; /* içindeki kart yüksekliğiyle esnesin */
+  }
+
+  .courses-cards-main {
+    width: 100%;
+    max-width: 347px;
+    height: 452px; /* senin ölçün */
+    margin-top: 0; /* gap varken gerek yok */
+  }
+
+  .courses-top-title {
+    width: 510px;
+    font-size:48px;
+    line-height: 54px;
+  }
+
+  .courses-top-desc {
+    width: 100%;
+  }
+
+  .courses-main {
+    width: clamp(0px, 100%, 704px);
+  }
+  .courses-top {
+    display: flex;
+    align-self: stretch;
+    flex-direction: row;
+    gap: 12px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .courses-wrapper {
+    max-width: 1100px; 
+    padding: 0 20px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  .courses-main {
+    width: 100%;
+    max-width: 1045px; /* 335 + 335 + 20(gap) = 690 → 704 güvenli */
+    margin: 20px auto;
+  }
+
+  .courses-main > ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* kartlar arası boşluk */
+    justify-content: left;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .courses-main > ul > li {
+    flex: 0 1 335px; /* taban genişlik 335px */
+    display: flex; /* içindeki kart yüksekliğiyle esnesin */
+  }
+
+  .courses-cards-main {
+    width: 100%;
+    max-width: 335px;
+    height: 398px; /* senin ölçün */
+    margin-top: 0; /* gap varken gerek yok */
+  }
+
+  .courses-top-title {
+    width: 510px;
+    font-size:48px;
+    line-height: 54px;
+  }
+
+  .courses-top-desc {
+    width: 405px;
+  }
+
+  .courses-main {
+    width: clamp(0px, 100%, 1081px);
+  }
+  .courses-top {
+    display: flex;
+    align-self: stretch;
+    flex-direction: row;
+    gap: 12px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    box-sizing: border-box;
+  }
+}
