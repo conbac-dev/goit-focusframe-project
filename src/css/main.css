@@ -283,6 +283,8 @@ body {
 @media (min-width: 1280px) {
   .photography-skills {
     padding: 24px 100px;
+    width: 100%;
+    height: auto;
   }
   
   .photography-title {
@@ -303,52 +305,66 @@ body {
 }
 
 /* Tablet: 768px - 1279px arası */
-@media (max-width: 1279px) and (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1279px) {
   .photography-skills {
-    padding: 20px 50px;
+    width: 768px;
+    height: 331px;
+    padding: 40px 30px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
   }
   
   .photography-title {
-    font-size: 45px;
-    line-height: 50px;
-    width: auto;
+    font-size: 40px;
+    line-height: 45px;
+    width: 100%;
     height: auto;
-    max-width: 100%;
+    margin: 0 auto;
   }
   
   .footer-container {
     gap: 40px;
+    flex-direction: row;
   }
   
   .footer-center {
     gap: 50px;
+    flex-direction: row;
   }
 }
 
-/* Tablet ve altı: 768px ve altı */
-@media (max-width: 768px) {
+/* Mobile: 320px - 374px arası (kauçuk düzen) */
+@media (min-width: 320px) and (max-width: 374px) {
   .photography-skills {
-    padding: 20px 20px;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    min-height: 400px;
+    padding: 40px 15px;
+    display: flex;
+    align-items: center;
     text-align: center;
   }
   
   .photography-title {
-    font-size: 32px;
-    line-height: 38px;
-    width: auto;
+    font-size: 24px;
+    line-height: 28px;
+    width: 100%;
     height: auto;
-    max-width: 100%;
   }
   
   .footer-container {
     flex-direction: column;
     text-align: center;
-    gap: 30px;
+    gap: 25px;
+    padding: 0 15px;
   }
   
   .footer-center {
     flex-direction: column;
-    gap: 30px;
+    gap: 25px;
     width: 100%;
   }
   
@@ -364,7 +380,8 @@ body {
   
   .social-links ul {
     justify-content: center;
-    gap: 20px;
+    gap: 15px;
+    flex-direction: column;
   }
   
   .form-group {
@@ -374,64 +391,13 @@ body {
   
   .email-input {
     border-radius: 10px 10px 0 0;
+    padding: 12px 15px;
+    font-size: 14px;
   }
   
   .submit-btn {
     border-radius: 0 0 10px 10px;
-  }
-}
-
-/* Modern iPhone boyutları için */
-@media (max-width: 375px) {
-  .footer {
-    padding: 35px 0 20px;
-  }
-
-  .footer-container {
-    padding: 0 12px;
-    gap: 20px;
-  }
-
-  .footer-logo h2 {
-    font-size: 18px;
-  }
-
-  .form-group {
-    flex-direction: column;
-  }
-
-  .email-input {
-    padding: 12px 15px;
-    font-size: 13px;
-  }
-
-  .submit-btn {
     padding: 12px 20px;
-    font-size: 13px;
-  }
-}
-
-/* En küçük mobil cihazlar için */
-@media (max-width: 320px) {
-  .footer {
-    padding: 30px 0 15px;
-  }
-
-  .footer-container {
-    padding: 0 10px;
-    gap: 15px;
-  }
-
-  .footer-logo h2 {
-    font-size: 16px;
-  }
-
-  .social-links ul {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .footer-nav a {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
