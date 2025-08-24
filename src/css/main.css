@@ -1,6 +1,21 @@
+/* Basit CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Basit CSS Reset */
+/* Genel */
+.body{
+  background-color: #121212;
+  max-width: 1440px;
+  width: 100%;
+}
 .dm-sans-normal {
   font-family: "DM Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 12;
   font-style: normal;
 }
+/* Genel */
+/* CSS Başlangıç */
