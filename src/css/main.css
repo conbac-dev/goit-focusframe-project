@@ -1,22 +1,40 @@
-/* Base Styles */
+/* Basit CSS Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
-  font-family: "DM Sans", sans-serif;
-  line-height: 1.6;
-  color: #333;
+/* Basit CSS Reset */
+/* Genel */
+.body {
+  background-color: #121212;
+  max-width: 1440px;
+  width: 100%;
 }
 
 .dm-sans-normal {
   font-family: "DM Sans", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 12;
+  font-weight: 400;
   font-style: normal;
 }
+
+.dm-sans-bold {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.dm-sans-link {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+/* Genel */
+/* CSS Başlangıç */
 
 /* Photography Skills Section */
 .photography-skills {
