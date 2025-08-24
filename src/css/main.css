@@ -77,23 +77,32 @@
   overflow: hidden;
 }
 
-.footer::before {
-  content: '';
+/* Footer Decorative Lines */
+.footer-lines {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-image:
-    radial-gradient(circle, #333333 1px, transparent 1px);
-  background-size: 20px 20px;
-  opacity: 0.3;
   z-index: 1;
+  pointer-events: none;
 }
 
-.footer>* {
+.lines-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.4;
+  object-position: center;
+}
+
+
+
+.footer > .footer-container,
+.footer > .footer-bottom,
+.footer > .social-links {
   position: relative;
-  z-index: 2;
+  z-index: 3;
 }
 
 .footer-container {
