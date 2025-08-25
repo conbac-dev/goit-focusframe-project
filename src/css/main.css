@@ -31,3 +31,87 @@
 }
 /* Genel */
 /* CSS Başlangıç */
+/* reviews css Başlangıç */
+.reviews {
+  width: 100%;
+  max-width: 360px;
+  border: 1px solid #121212;
+  background-color: #121212;
+  /* mobil odaklı */
+}
+
+.reviews h2 {
+  font-size: 28px;
+  font-weight: 500px;
+  margin-bottom: 40px;
+  color: #FFFFFF;
+  letter-spacing: -0.04em;
+  font-family: "DM Sans", sans-serif;
+}
+
+.review-card {
+  background: #121212;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.review-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.review-header img {
+  width: 56px;
+  height: 56px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.review-info h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 500px;
+  font-family: "DM Sans", sans-serif;
+  color: #FFFFFF;
+}
+
+.review-info p {
+  margin: 0;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 400px;
+  font-family: "DM Sans", sans-serif;
+  letter-spacing: -0.02em;
+}
+
+.stars {
+  margin: 8px 0 14px;
+}
+
+.star {
+  margin-right: 4px;
+  width: 16px;
+  height: 16px;
+  fill: #bea69e;
+}
+
+.star.inactive {
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+  fill: #FFFFFF;
+}
+
+.review-text {
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: #fff;
+  font-weight: 400px;
+  font-family: "DM Sans", sans-serif;
+}
+
+/* Reviews css Bitiş */
