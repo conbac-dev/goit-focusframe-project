@@ -1,174 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FocusFrame 2.0</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./src/css/main.css" />
+    <link
+      rel="icon"
+      href="/src/images/icons.svg#icon-favicon"
+      type="image/svg+xml"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FocusFrame 2.0</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
-    integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="./src/css/main.css" />
-  <link rel="icon" href="/src/images/icons.svg#icon-favicon" type="image/svg+xml" />
-</head>
+  <body>
+    <!-- Header -->
+    <section>
+      <div class="header-bg">
+        <header class="header" id="header">
+          <div class="container header-container">
+            <div class="header-components">
+              <a href="#">
+                <h2 class="header-logo">Focus.Frame</h2>
+              </a>
+              <div class="header-camera-bg">
+                <svg class="camera">
+                  <a href="#signup">
+                    <use
+                      xlink:href="../images/icons.svg#icon-camera-header"
+                    ></use>
+                  </a>
+                </svg>
+              </div>
+              <button id="openModalBtn">
+                <svg class="hamburger">
+                  <use xlink:href="../images/icons.svg#icon-menu"></use>
+                </svg>
+              </button>
+              <!-- "display-none" sınıfı verilen element display:none olur -->
+              <div class="header-hamburger-modal-overlay" id="header-modal">
+                <div class="header-hamburger-modal">
+                  <button id="closeModalBtn">
+                    <svg class="header-hamburger-modal-x">
+                      <use xlink:href="../images/icons.svg#icon-x"></use>
+                    </svg>
+                  </button>
+                  <div class="header-modal-nav">
+                    <ul class="header-modal-nav-ul">
+                      <li><a href="#about-us">ABOUT US</a></li>
+                      <li><a href="#ourcourses">OUR COURSES</a></li>
+                      <li><a href="#ourmentors">OUR MENTORS</a></li>
+                      <li><a href="#reviews">REVIEWS</a></li>
+                      <li><a href="#footer">CONTACTS</a></li>
+                    </ul>
+                  </div>
 
-<body>
-  <!-- Header -->
-  <section>
-<div class="header-bg">
-  <header class="header" id="header">
-    <div class="container header-container">
-      <div class="header-components">
-        <a href="#">
-          <h2 class="header-logo">Focus.Frame</h2>
-        </a>
-        <div class="header-camera-bg">
-          <svg class="camera">
-            <a href="#signup">
-              <use xlink:href="../images/icons.svg#icon-camera-header"></use>
-            </a>
-          </svg>
-        </div>
-        <button id="openModalBtn">
-          <svg class="hamburger">
-            <use xlink:href="../images/icons.svg#icon-menu"></use>
-          </svg>
-        </button>
-        <!-- "display-none" sınıfı verilen element display:none olur -->
-        <div class="header-hamburger-modal-overlay" id="header-modal">
-          <div class="header-hamburger-modal">
-            <button id="closeModalBtn">
-              <svg class="header-hamburger-modal-x">
-                <use xlink:href="../images/icons.svg#icon-x"></use>
-              </svg>
-            </button>
-            <div class="header-modal-nav">
-              <ul class="header-modal-nav-ul">
-                <li><a href="#about-us">ABOUT US</a></li>
-                <li><a href="#ourcourses">OUR COURSES</a></li>
-                <li><a href="#ourmentors">OUR MENTORS</a></li>
-                <li><a href="#reviews">REVIEWS</a></li>
-                <li><a href="#footer">CONTACTS</a></li>
-              </ul>
+                  <img
+                    srcset="
+                      ../images/au-mobile.jpg,
+                      ../images/au-mobile@2x.jpeg,
+                      ../images/au-mobile@3x.jpeg
+                    "
+                    src="../images/au-mobile.jpg"
+                    alt="explanation of the camera image"
+                  />
+                </div>
+              </div>
+              <nav class="header-nav">
+                <ul class="header-nav-ul">
+                  <li><a href="#about-us">ABOUT US</a></li>
+                  <li><a href="#ourcourses">OUR COURSES</a></li>
+                  <li><a href="#ourmentors">OUR MENTORS</a></li>
+                  <li><a href="#reviews">REVIEWS</a></li>
+                  <li><a href="#footer">CONTACTS</a></li>
+                </ul>
+              </nav>
             </div>
-
-            <img srcset="
-                    ../images/au-mobile.jpg,
-                    ../images/au-mobile@2x.jpeg,
-                    ../images/au-mobile@3x.jpeg
-                  " src="../images/au-mobile.jpg" alt="explanation of the camera image" />
+            <a class="header-sign-up-button" href="#signup">Sıgn Up</a>
           </div>
-        </div>
-        <nav class="header-nav">
-          <ul class="header-nav-ul">
-            <li><a href="#about-us">ABOUT US</a></li>
-            <li><a href="#ourcourses">OUR COURSES</a></li>
-            <li><a href="#ourmentors">OUR MENTORS</a></li>
-            <li><a href="#reviews">REVIEWS</a></li>
-            <li><a href="#footer">CONTACTS</a></li>
-          </ul>
-        </nav>
+        </header>
       </div>
-      <a class="header-sign-up-button" href="#signup">Sıgn Up</a>
+    </section>
+    <!-- Header -->
+    <!-- Hero -->
+    <section></section>
+    <!-- Hero -->
+    <!-- About Us -->
+    <section></section>
+    <!-- About Us -->
+    <!-- Our Courses -->
+    <section></section>
+    <!-- Our Courses -->
+    <!-- Our Mentors -->
+    <section id="our-mentors">
+      <div class="our-mentors-container">
+        <!-- our mentors: header -->
+        <h2>
+          Our
+          <span>Mentors</span>
+        </h2>
+        <!-- our mentors: header end -->
+
+        <!-- our mentors: container -->
+        <ul>
+          <!-- our mentors: emilia smith -->
+          <li>
+            <img
+              src="./src/images/our-mentors/emilia-smith.jpg"
+              alt="Our Mentor: Emilia Smith"
+              width="180"
+              height="180"
+            />
+
+            <div class="our-mentors-info">
+              <h3>Emilia Smith</h3>
+              <p>1.5 years of experience</p>
+            </div>
+          </li>
+          <!-- our mentors: emilia smith end -->
+
+          <!-- our mentors: alex lebedev -->
+          <li>
+            <img
+              src="./src/images/our-mentors/alex-lebedev.jpg"
+              alt="Our Mentor: Alex Lebedev"
+              width="180"
+              height="180"
+            />
+
+            <div class="our-mentors-info">
+              <h3>Alex Lebedev</h3>
+              <p>3.5 years of experience</p>
+            </div>
+          </li>
+          <!-- our mentors: alex lebedev end -->
+
+          <!-- our mentors: mia dubrovska -->
+          <li>
+            <img
+              src="./src/images/our-mentors/mia-dubrovska.jpg"
+              alt="Our Mentor: Mia Dubrovska"
+              width="180"
+              height="180"
+            />
+
+            <div class="our-mentors-info">
+              <h3>Mia Dubrovska</h3>
+              <p>2.0 years of experience</p>
+            </div>
+          </li>
+          <!-- our mentors: mia dubrovska end -->
+
+          <!-- our mentors: eliot kovalev -->
+          <li>
+            <img
+              src="./src/images/our-mentors/eliot-kovalev.jpg"
+              alt="Our Mentor: Eliot Kovalev"
+              width="180"
+              height="180"
+            />
+
+            <div class="our-mentors-info">
+              <h3>Eliot Kovalev</h3>
+              <p>4.0 years of experience</p>
+            </div>
+          </li>
+          <!-- our mentors: eliot kovalev end -->
+        </ul>
+        <!-- our mentors: container end -->
+      </div>
+    </section>
+    <!-- Our Mentors -->
+    <!-- Sign Up -->
+    <section></section>
+    <!-- Sign Up -->
+    <!-- Reviews -->
+    <section></section>
+    <div class="reviews">
+      <h2>Reviews</h2>
+      <div class="review-container">
+        <div class="review-card">
+          <div class="review-header">
+            <div class="review-author">
+              <img src="src/images/reviews/user.jpg" alt="Abraham Baker" />
+              <div class="review-info">
+                <h3>Abraham Baker</h3>
+                <p>Student</p>
+              </div>
+            </div>
+            <div class="review-stars">
+              <svg class="star">
+                <use xlink:href="src/images/icons.svg#icon-star1"></use>
+              </svg>
+              <svg class="star">
+                <use xlink:href="src/images/icons.svg#icon-star1"></use>
+              </svg>
+              <svg class="star">
+                <use xlink:href="src/images/icons.svg#icon-star1"></use>
+              </svg>
+              <svg class="star">
+                <use xlink:href="src/images/icons.svg#icon-star1"></use>
+              </svg>
+              <svg class="star inactive">
+                <use xlink:href="src/images/icons.svg#icon-star"></use>
+              </svg>
+            </div>
+          </div>
+          <p class="review-text">
+            I am very pleased that I decided to enroll in photography school.
+            The teachers turned out to be very talented and experienced
+            professionals who share their knowledge and are dedicated to their
+            work. I was able to expand my skills and discover my own style.
+          </p>
+        </div>
+        <div class="review-card2">
+          <div class="review-header">
+            <div class="review-author">
+              <img src="src/images/reviews/user1.jpg" alt="Amanda Lowery" />
+              <div class="review-info">
+                <h3>Amanda Lowery</h3>
+                <p>Student</p>
+              </div>
+            </div>
+            <div class="review-stars">
+              <svg class="star">
+                <use xlink:href="src/images/icons.svg#icon-star1"></use>
+              </svg>
+              <svg class="star">
+                <use xlink:href="src/images/icons.svg#icon-star1"></use>
+              </svg>
+              <svg class="star">
+                <use xlink:href="src/images/icons.svg#icon-star1"></use>
+              </svg>
+              <svg class="star">
+                <use xlink:href="src/images/icons.svg#icon-star1"></use>
+              </svg>
+              <svg class="star inactive">
+                <use xlink:href="src/images/icons.svg#icon-star"></use>
+              </svg>
+            </div>
+          </div>
+          <p class="review-text">
+            The courses at the photography school exceeded all my expectations.
+            I gained not only technical knowledge, but also inspiration and
+            motivation to reach new heights in my creativity. Hands-on classes
+            and workshops helped me understand different styles of photography.
+          </p>
+        </div>
+      </div>
     </div>
-  </header>
-</div>
-  </section>
-  <!-- Header -->
-  <!-- Hero -->
-  <section>
-
-  </section>
-  <!-- Hero -->
-  <!-- About Us -->
-  <section>
-
-  </section>
-  <!-- About Us -->
-  <!-- Our Courses -->
-  <section>
-
-  </section>
-  <!-- Our Courses -->
-  <!-- Our Mentors -->
-  <section id="our-mentors">
-    <div class="our-mentors-container">
-      <!-- our mentors: header -->
-      <h2>Our
-        <span>Mentors</span>
-      </h2>
-      <!-- our mentors: header end -->
-
-      <!-- our mentors: container -->
-      <ul>
-        <!-- our mentors: emilia smith -->
-        <li>
-          <img src="./src/images/our-mentors/emilia-smith.jpg" alt="Our Mentor: Emilia Smith" width="180" height="180">
-
-          <div class="our-mentors-info">
-            <h3>Emilia Smith</h3>
-            <p>1.5 years of experience</p>
-          </div>
-        </li>
-        <!-- our mentors: emilia smith end -->
-
-        <!-- our mentors: alex lebedev -->
-        <li>
-          <img src="./src/images/our-mentors/alex-lebedev.jpg" alt="Our Mentor: Alex Lebedev" width="180" height="180">
-
-          <div class="our-mentors-info">
-            <h3>Alex Lebedev</h3>
-            <p>3.5 years of experience</p>
-          </div>
-        </li>
-        <!-- our mentors: alex lebedev end -->
-
-        <!-- our mentors: mia dubrovska -->
-        <li>
-          <img src="./src/images/our-mentors/mia-dubrovska.jpg" alt="Our Mentor: Mia Dubrovska" width="180" height="180">
-
-          <div class="our-mentors-info">
-            <h3>Mia Dubrovska</h3>
-            <p>2.0 years of experience</p>
-          </div>
-        </li>
-        <!-- our mentors: mia dubrovska end -->
-
-        <!-- our mentors: eliot kovalev -->
-        <li>
-          <img src="./src/images/our-mentors/eliot-kovalev.jpg" alt="Our Mentor: Eliot Kovalev" width="180" height="180">
-
-          <div class="our-mentors-info">
-            <h3>Eliot Kovalev</h3>
-            <p>4.0 years of experience</p>
-          </div>
-        </li>
-        <!-- our mentors: eliot kovalev end -->
-      </ul>
-      <!-- our mentors: container end -->
-    </div>
-  </section>
-  <!-- Our Mentors -->
-  <!-- Sign Up -->
-  <section>
-
-  </section>
-  <!-- Sign Up -->
-  <!-- Reviews -->
-  <section>
-
-  </section>
-  <!-- Reviews -->
-  <!-- Footer -->
-  <section>
-
-  </section>
-  <!-- Footer -->
-</body>
-
+    <!-- Footer -->
+    <section></section>
+    <!-- Footer -->
+  </body>
 </html>
