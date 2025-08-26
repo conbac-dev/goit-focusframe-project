@@ -152,7 +152,7 @@ header .hamburger {
   display: none;
 }
 .header-hamburger-modal-overlay {
-  display: flex;
+  display: none;
   position: fixed;
   width: 100%;
   height: 100%;
@@ -326,7 +326,7 @@ header .hamburger {
     color: rgba(190, 166, 158, 1);
   }
   /*  */
-  /* MODAL SECITON */
+  /* MODAL SECTION */
   /*  */
   .header-hamburger-modal-overlay {
     display: none;

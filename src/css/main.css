@@ -13,10 +13,34 @@ p {
   margin: 0;
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+p:last-child {
+  margin-bottom: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 /* Basit CSS Reset */
 /* Genel */
@@ -46,6 +70,7 @@ body {
   font-weight: 700;
   font-style: normal;
 }
+
 /* Genel */
 /* CSS Başlangıç */
 @media screen and (min-width: 320px) {
@@ -165,12 +190,13 @@ body {
   /*  */
   /* MODAL */
   /*  */
-  .display-none {
-    display: none;
+  .is-open {
+    display: flex;
+    overflow: hidden;
   }
 
   .header-hamburger-modal-overlay {
-    display: none;
+    display: flex;
     position: fixed;
     width: 100%;
     height: 100%;
@@ -243,62 +269,61 @@ body {
 /* tablet */
 @media screen and (min-width: 768px) {
   .header-bg {
-      height: 1120px;
-    }
+    height: 1120px;
+  }
 
-    header {
-      margin-bottom: 0;
-    }
-  
-    .header-container {
-      max-width: 704px;
-      padding: 0;
-    }
-  
-    .header-components {
-      height: 60px;
-      width: 504px;
-    }
-  
-    .header-camera-bg {
-      display: none;
-    }
-  
-    .header-sign-up-button {
-      display: block;
-    }
-  
-    /*  */
-    /* MODAL SECTION */
-    /*  */
-    .header-hamburger-modal {
-      width: 480px;
-      height: 1024px;
-  
-      gap: 114px;
-    }
-  
-    .header-hamburger-modal-x {
-      top: 30px;
-      right: 42px;
-      width: 20px;
-      height: 20px;
-      stroke-width: 3px;
-    }
-  
-    .header-modal-nav {
-      margin-left: 64px;
-    }
-  
-    .header-modal-nav-ul {
-      gap: 28px;
-    }
-  
-    .header-hamburger-modal img {
-      width: 100%;
-      height: auto;
-    }
+  header {
+    margin-bottom: 0;
+  }
 
+  .header-container {
+    max-width: 704px;
+    padding: 0;
+  }
+
+  .header-components {
+    height: 60px;
+    width: 504px;
+  }
+
+  .header-camera-bg {
+    display: none;
+  }
+
+  .header-sign-up-button {
+    display: block;
+  }
+
+  /*  */
+  /* MODAL SECTION */
+  /*  */
+  .header-hamburger-modal {
+    width: 480px;
+    height: 1024px;
+
+    gap: 114px;
+  }
+
+  .header-hamburger-modal-x {
+    top: 30px;
+    right: 42px;
+    width: 20px;
+    height: 20px;
+    stroke-width: 3px;
+  }
+
+  .header-modal-nav {
+    margin-left: 64px;
+  }
+
+  .header-modal-nav-ul {
+    gap: 28px;
+  }
+
+  .header-hamburger-modal img {
+    width: 100%;
+    height: auto;
+  }
 }
 /* desktop */
 @media screen and (min-width: 1280px) {
@@ -361,5 +386,4 @@ body {
   .header-hamburger-modal-overlay {
     display: none;
   }
-  
 }
