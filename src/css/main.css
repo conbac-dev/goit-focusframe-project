@@ -69,7 +69,7 @@ body {
 
   /* Kamera görseli için yuvarlak arka plan */
   .about-us-container ul li:first-child {
-    max-width: 767px;
+    max-width: 1280px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -107,10 +107,61 @@ body {
     display: block;
     margin: 40px;
   }
-    
+    /* Paragrafları kapsayan div */
+  .about-us-texts {
+    display: flex;
+    gap: 20px; /* paragraf arası boşluk */
+    justify-content: center;
+    max-width: 800px;   /* yazıların genişliği */
+    margin: 20px auto 0; /* ortalama */
   }
+
+  .about-us-texts li {
+    flex: 1; /* İki paragraf eşit genişlik alsın */
+  }
+
+  .about-us-paragraph {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+  
   /* desktop */
   @media screen and (min-width: 1280px) {
+    .about-us-container ul {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px; 
+  }
+
+  /* Görsel alanı */
+  .about-us-container ul li:first-child {
+    flex: 1;
+    max-width: 500px; /* görselin taşmaması için */
+    display: flex;
+    justify-content: center;
+  }
+
+  /* Metinler için kapsayıcı */
+  .about-us-texts {
+    flex: 1;
+    display: flex;
+    flex-direction: row; 
+    gap: 30px;
+    max-width: 600px;   /* metin çok yayılmasın */
+  }
+
+  .about-us-texts li {
+    flex: 1;
+  }
+
+  .about-us-paragraph {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
   }
   /* Genel */
   /* CSS Başlangıç */
