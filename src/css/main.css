@@ -514,11 +514,12 @@ header .hamburger {
 
 /* Photography Skills Section */
 .photography-skills {
-  background-color: #1a1a1a;
   padding: 24px 100px;
   text-align: left;
   width: 100%;
   position: relative;
+  border-top: 1px solid #BEA69E;
+  border-bottom: 1px solid #BEA69E;
 }
 
 .photography-title {
@@ -547,11 +548,12 @@ header .hamburger {
 /* KUTLUHAN / FOOTER / BAŞLANGIÇ */
 /* Photography Skills Section */
 .photography-skills {
-  background-color: #1a1a1a;
   padding: 24px 100px;
   text-align: left;
   width: 100%;
   position: relative;
+  border-top: 1px solid #BEA69E;
+  border-bottom: 1px solid #BEA69E;
 }
 
 .photography-title {
