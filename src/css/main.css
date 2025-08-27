@@ -42,7 +42,6 @@ body {
   margin: 0 auto; /* wrapper'ı ortala */
   padding: 0 20px; /* içte 20px nefes alanı */
   box-sizing: border-box; /* padding+border genişliğe dahil */
-  
 }
 .courses-wrapper ul,
 ol,
@@ -75,8 +74,7 @@ li {
   letter-spacing: -4%;
 }
 .courses-top-title span {
-  color: #BEA69E;
-;
+  color: #bea69e;
 }
 .courses-top-desc {
   font-weight: 400;
@@ -113,6 +111,24 @@ li {
 .courses-card-number {
   opacity: 0.4;
 }
+.courses-card-svg {
+  display: flex;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  background: #1d1d1d;
+}
+.courses-card-svg:hover {
+  background: #bea69e;
+}
+.vektor-ok {
+  width: 18px;
+  height: 18px;
+  fill:#ffffff;
+}
+
 .courses-card-title {
   max-width: 279px;
   margin: 28px 28px 28px 28px;
@@ -132,13 +148,14 @@ li {
   .courses-cards-main {
     width: 100%;
     max-width: 335px;
-    height: 398px;
+    height: 100%;
+    min-height: 398px;;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .courses-wrapper {
-    max-width: 760px; 
+    max-width: 760px;
     padding: 0 20px;
     margin: 0 auto;
     box-sizing: border-box;
@@ -174,7 +191,7 @@ li {
 
   .courses-top-title {
     width: 510px;
-    font-size:48px;
+    font-size: 48px;
     line-height: 54px;
   }
 
@@ -198,7 +215,7 @@ li {
 
 @media screen and (min-width: 1280px) {
   .courses-wrapper {
-    max-width: 1100px; 
+    max-width: 1100px;
     padding: 0 20px;
     margin: 0 auto;
     box-sizing: border-box;
@@ -234,7 +251,7 @@ li {
 
   .courses-top-title {
     width: 510px;
-    font-size:48px;
+    font-size: 48px;
     line-height: 54px;
   }
 
@@ -257,7 +274,6 @@ li {
 }
 
 /* Ali Kemal Sonu */
-
 
 #our-mentors {
   margin-top: 148px;
