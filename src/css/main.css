@@ -312,8 +312,17 @@ header .hamburger {
   opacity: 0.7;
 }
 
+.sgn-message-field:hover,
 .sgn-message-field:active,
+.sgn-input-style:hover,
 .sgn-input-style:active {
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.sgn-message-field:focus,
+.sgn-input-style:focus {
+  outline: none;
   border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
@@ -350,6 +359,7 @@ label {
   background-color: #ffffff;
 }
 
+.sgn-send-button:hover,
 .sgn-send-button:active {
   color: #bea69e;
   background-color: #1d1d1d;
@@ -371,7 +381,7 @@ label {
   cursor: pointer;
 }
 
-.img-container {
+.sgn-img-container {
   display: none;
 }
 
@@ -486,7 +496,7 @@ label {
     min-height: 119px;
   }
 
-  label {
+  .sgn-label {
     display: block;
   }
 
@@ -626,22 +636,19 @@ label {
   }
 
   .sgn-img-lens {
-    margin: 76px 19px 62px;
+    width: 200px;
+    height: 192px;
+    margin: 40px 56px 0 0;
   }
 
   .sgn-img-camera {
+    width: 240px;
+    height: 296px;
     margin: 156px 50px 88px;
   }
 
   /* --- DESKTOP SİGN UP BİTİŞİ --- */
 }
-
-
-
-
-
-
-
 
 /* @media screen and (min-width: 1440px) üzeri */
 
@@ -660,10 +667,14 @@ label {
   }
 
   .sgn-img-lens {
-    margin: 63px 18px 62px;
+    width: 213px;
+    height: 204px;
+    margin: 40px 60px 0 0;
   }
 
   .sgn-img-camera {
+    width: 254px;
+    height: 313px;
     margin: 139px 48px 88px;
   }
 }
