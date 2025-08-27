@@ -289,20 +289,29 @@ header .hamburger {
   }
 
   .form-group {
-    flex-direction: column;
-    border-radius: 10px;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
   }
 
   .email-input {
-    border-radius: 10px 10px 0 0;
-    padding: 12px 15px;
-    font-size: 14px;
+    width: 267px;
+    height: 60px;
+    border-radius: 12px;
+    padding: 0 20px;
+    font-size: 16px;
+    background-color: #ffffff;
+    color: #888888;
   }
 
   .submit-btn {
-    border-radius: 0 0 10px 10px;
-    padding: 12px 20px;
-    font-size: 14px;
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    font-size: 16px;
+    background-color: #1D1D1D;
+    color: #ffffff;
+    flex-shrink: 0;
   }
 /* KUTLUHAN FOOTER için MOBILE/KAUÇUK */
 }
@@ -391,6 +400,29 @@ header .hamburger {
     .footer-center {
       gap: 50px;
       flex-direction: row;
+    }
+
+    .form-group {
+      flex-direction: row;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .email-input {
+      width: 178px;
+      height: 60px;
+      border-radius: 12px;
+      background-color: #ffffff;
+      color: #888888;
+    }
+
+    .submit-btn {
+      width: 60px;
+      height: 60px;
+      border-radius: 12px;
+      background-color: #1D1D1D;
+      color: #ffffff;
+      flex-shrink: 0;
     }
  /* KUTLUHAN FOOTER için TABLET */
 }
@@ -547,7 +579,6 @@ header .hamburger {
 
 /* Footer Styles */
 .footer {
-  background-color: #1a1a1a;
   color: #ffffff;
   padding: 60px 0 30px;
   position: relative;
@@ -628,6 +659,7 @@ header .hamburger {
   font-size: 14px;
   line-height: 1.5;
   color: #cccccc;
+  white-space: nowrap;
 }
 
 /* Center Section - Navigation */
@@ -677,24 +709,27 @@ header .hamburger {
 
 .form-group {
   display: flex;
-  background-color: #ffffff;
-  border-radius: 50px;
-  overflow: hidden;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  gap: 10px;
+  align-items: center;
 }
 
 .email-input {
-  flex: 1;
-  padding: 15px 20px;
+  width: 216px;
+  height: 60px;
+  padding: 0 20px;
   border: none;
-  background: transparent;
-  font-size: 14px;
-  color: #333;
+  background-color: #ffffff;
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  color: #888888;
   outline: none;
+  border-radius: 12px;
+  opacity: 1;
 }
 
 .email-input::placeholder {
-  color: #999;
+  color: #888888;
+  font-family: "DM Sans", sans-serif;
 }
 
 .email-input:invalid {
@@ -702,20 +737,24 @@ header .hamburger {
 }
 
 .submit-btn {
-  background-color: #333333;
+  width: 60px;
+  height: 60px;
+  background-color: #1D1D1D;
   color: #ffffff;
   border: none;
-  padding: 15px 30px;
-  font-size: 14px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
   font-weight: 600;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
+  border-radius: 12px;
+  opacity: 1;
+  flex-shrink: 0;
 }
 
 .submit-btn:hover {
-  background-color: #555555;
+  background-color: #BEA69E;
+  color: #ffffff;
 }
 
 /* Alt Section */
@@ -725,17 +764,17 @@ header .hamburger {
   padding: 0 20px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
+  /* ✅ ALTTA HİZALAMA */
   flex-wrap: wrap;
   gap: 20px;
-  border-top: 1px solid #333333;
   padding-top: 30px;
 }
 
 .footer-legal {
   display: flex;
-  gap: 30px;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .footer-legal a {
@@ -761,7 +800,6 @@ header .hamburger {
   max-width: 1200px;
   margin: 20px auto 0;
   padding: 0 20px;
-  border-top: 1px solid #333333;
   padding-top: 20px;
 }
 
