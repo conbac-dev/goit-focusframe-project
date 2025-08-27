@@ -34,21 +34,21 @@
               <div class="header-camera-bg">
                 <svg class="camera">
                   <a href="#signup">
-                    <use xlink:href="../src/img/icons.svg#icon-camera"></use>
+                    <use xlink:href="../src/images/icons.svg#icon-camera"></use>
                   </a>
                 </svg>
               </div>
-              <button id="openModalBtn">
+              <button class="is-open" id="openModalBtn">
                 <svg class="hamburger">
-                  <use xlink:href="../src/img/icons.svg#icon-menu"></use>
+                  <use xlink:href="../src/images/icons.svg#icon-menu"></use>
                 </svg>
               </button>
               <!-- "display-none" sınıfı verilen element display:none olur -->
               <div class="header-hamburger-modal-overlay" id="header-modal">
                 <div class="header-hamburger-modal">
-                  <button class="is-open" id="closeModalBtn">
+                  <button class="is-close">
                     <svg class="header-hamburger-modal-x">
-                      <use xlink:href="../src/img/icons.svg#icon-x"></use>
+                      <use xlink:href="../src/images/icons.svg#icon-x"></use>
                     </svg>
                   </button>
                   <div class="header-modal-nav">
@@ -63,11 +63,11 @@
 
                   <img
                     srcset="
-                      ../src/img/header/au-mobile.jpg,
-                      ../src/img/header/au-mobile@2x.jpeg,
-                      ../src/img/header/au-mobile@3x.jpeg
+                      ../src/images/header/au-mobile.jpg    1x,
+                      ../src/images/header/au-mobile@2x.jpg 2x,
+                      ../src/images/header/au-mobile@3x.jpg 3x
                     "
-                    src="../src/img/header/au-mobile.jpg"
+                    src="../src/images/header/au-mobile.jpg"
                     alt="explanation of the camera image"
                   />
                 </div>
