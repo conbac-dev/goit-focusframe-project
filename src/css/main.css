@@ -243,7 +243,7 @@ header .hamburger {
 
 .signup-section {
   background-color: #121212;
-  padding: 80px 20px;
+  padding: 0 20px 80px;
   height: 100%;
 }
 
@@ -457,7 +457,7 @@ label {
   }
 
   .signup-section {
-    padding: 100px 32px;
+    padding: 0 32px 100px;
   }
 
   .sgn-up-title,
@@ -592,7 +592,7 @@ label {
   }
 
   .signup-section {
-    padding: 150px 100px;
+    padding: 0 100px 150px;
   }
 
   .sgn-message-field {
