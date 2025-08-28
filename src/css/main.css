@@ -244,7 +244,7 @@ header .hamburger {
 #our-mentors {
   display: flex;
   justify-content: center;
-  margin-bottom: 148px;
+  margin-bottom: 80px;
 }
 
 .our-mentors-container {
@@ -381,6 +381,10 @@ header .hamburger {
   }
 
   /* our-mentors  */
+  #our-mentors {
+    margin-bottom: 100px;
+  }
+
   .our-mentors-container {
     max-width: 704px;
   }
@@ -408,6 +412,10 @@ header .hamburger {
 }
 /* desktop */
 @media screen and (min-width: 1280px) {
+  #our-mentors {
+    margin-bottom: 150px;
+  }
+
   .header-bg {
     height: 909px;
   }
@@ -481,6 +489,11 @@ header .hamburger {
 
 @media screen and (min-width: 1440px) {
   /* our-mentors  */
+
+  #our-mentors {
+    margin-bottom: 150px;
+  }
+
   .our-mentors-container {
     max-width: 1240px;
   }
