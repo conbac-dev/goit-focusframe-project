@@ -13,7 +13,7 @@ p {
   margin: 0;
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -238,68 +238,173 @@ header .hamburger {
   width: 100%;
   height: auto;
 }
+
+/* our-mentors */
+
+#our-mentors {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 148px;
+}
+
+.our-mentors-container {
+  max-width: 335px;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 48px;
+}
+
+.our-mentors-container h2 {
+  align-self: flex-start;
+
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 54px;
+  letter-spacing: -4%;
+  color: #ffffff;
+}
+
+.our-mentors-container h2 span {
+  color: #bea69e;
+}
+
+.our-mentors-container ul {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  gap: 38px;
+  color: #ffffff;
+  list-style: none;
+}
+
+.our-mentors-container ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.our-mentors-container ul li img {
+  border-radius: 50%;
+}
+
+.our-mentors-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.our-mentors-info h3 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 0;
+}
+
+.our-mentors-info p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -2%;
+
+  color: rgba(255, 255, 255, 0.5);
+}
+/* our-mentors end */
+
 /*kauçuk*/
 @media screen and (min-width: 320px) and (max-width: 374px) {
 }
 /* tablet */
 @media screen and (min-width: 768px) {
   .header-bg {
-      height: 1120px;
-    }
+    height: 1120px;
+  }
 
-    header {
-      margin-bottom: 0;
-    }
-  
-    .header-container {
-      max-width: 704px;
-      padding: 0;
-    }
-  
-    .header-components {
-      height: 60px;
-      width: 504px;
-    }
-  
-    .header-camera-bg {
-      display: none;
-    }
-  
-    .header-sign-up-button {
-      display: block;
-    }
-  
-    /*  */
-    /* MODAL SECTION */
-    /*  */
-    .header-hamburger-modal {
-      width: 480px;
-      height: 1024px;
-  
-      gap: 114px;
-    }
-  
-    .header-hamburger-modal-x {
-      top: 30px;
-      right: 42px;
-      width: 20px;
-      height: 20px;
-      stroke-width: 3px;
-    }
-  
-    .header-modal-nav {
-      margin-left: 64px;
-    }
-  
-    .header-modal-nav-ul {
-      gap: 28px;
-    }
-  
-    .header-hamburger-modal img {
-      width: 100%;
-      height: auto;
-    }
+  header {
+    margin-bottom: 0;
+  }
 
+  .header-container {
+    max-width: 704px;
+    padding: 0;
+  }
+
+  .header-components {
+    height: 60px;
+    width: 504px;
+  }
+
+  .header-camera-bg {
+    display: none;
+  }
+
+  .header-sign-up-button {
+    display: block;
+  }
+
+  /*  */
+  /* MODAL SECTION */
+  /*  */
+  .header-hamburger-modal {
+    width: 480px;
+    height: 1024px;
+
+    gap: 114px;
+  }
+
+  .header-hamburger-modal-x {
+    top: 30px;
+    right: 42px;
+    width: 20px;
+    height: 20px;
+    stroke-width: 3px;
+  }
+
+  .header-modal-nav {
+    margin-left: 64px;
+  }
+
+  .header-modal-nav-ul {
+    gap: 28px;
+  }
+
+  .header-hamburger-modal img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* our-mentors  */
+  .our-mentors-container {
+    max-width: 704px;
+  }
+
+  .our-mentors-container h2 {
+    font-size: 48px;
+  }
+
+  .our-mentors-container ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 488px;
+    gap: 100px;
+  }
+
+  .our-mentors-info h3 {
+    font-size: 28px;
+    line-height: 32px;
+  }
+  .our-mentors-info p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  /* our-mentors end */
 }
 /* desktop */
 @media screen and (min-width: 1280px) {
@@ -362,5 +467,22 @@ header .hamburger {
   .header-hamburger-modal-overlay {
     display: none;
   }
-  
+
+  /* our-mentors */
+  .our-mentors-container {
+    max-width: 1080px;
+  }
+
+  .our-mentors-container ul {
+    max-width: 1034px;
+  }
+  /* our-mentors end */
+}
+
+@media screen and (min-width: 1440px) {
+  /* our-mentors  */
+  .our-mentors-container {
+    max-width: 1240px;
+  }
+  /* our-mentors end */
 }
