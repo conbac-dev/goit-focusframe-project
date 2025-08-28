@@ -316,7 +316,6 @@ header .hamburger {
         flex-direction: row;
         gap: 4px;
         width: 89px;
-          height: 36px;
     }
   
     .hero-ok-div span {
@@ -366,6 +365,7 @@ header .hamburger {
           height: 40px;
     }
     .hero-text{
+      text-decoration: none;
       font-weight: 400;
         font-size: 14px;
         line-height: 1.28571;
@@ -455,6 +455,10 @@ header .hamburger {
     .hero-div{
       margin: 32px;
     }
+    .hero-ok-div{
+      flex-direction: column;
+      align-items: flex-start;
+    }
     .hero-text-div{
       width: 517px;
     }
@@ -468,7 +472,22 @@ header .hamburger {
     .hero-students{
       flex-direction: row;
       width: 202px;
+      align-items: stretch;
     }
+    .hero-text-container{
+      padding-left: 12px;
+    }
+    .hero-image{
+      width: 393px;
+      height: 434px;
+      overflow: hidden;
+    }
+    .hero-image img{
+      height: initial;
+      width: 100%;
+      object-fit: cover;
+    }
+    
 }
 /* desktop */
 @media screen and (min-width: 1280px) {
