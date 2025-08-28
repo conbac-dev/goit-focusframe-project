@@ -239,7 +239,9 @@ header .hamburger {
 }
 
     /*hero css*/
-
+.hero{
+  margin-bottom: 80px;
+}
     .hero-div {
       display: flex;
       flex-direction: column;
@@ -249,7 +251,6 @@ header .hamburger {
       padding-left: 20px;
       padding-right: 20px;
       margin: 20px;
-      margin-bottom: 80px;
     }
 
     .hero-text-container{
@@ -326,7 +327,7 @@ header .hamburger {
         color: #fff;
     }
     .hero-ok{
-      fill: #fff;
+      fill: #bea69e;
       width: 18px;
         height: 18px;
     }
@@ -351,6 +352,9 @@ header .hamburger {
       transform: translate(-50%, -50%);
       width: 20px;
       height: 20px;
+      fill: transparent;
+      stroke: black;
+      stroke-width: 2px;
     }
     .hero-review-div{
       display: flex;
@@ -445,6 +449,9 @@ header .hamburger {
       width: 100%;
       height: auto;
     }
+    .hero{
+      margin-bottom: 100px;
+    }
     .hero-div{
       margin: 32px;
     }
@@ -462,9 +469,6 @@ header .hamburger {
       flex-direction: row;
       width: 202px;
     }
-    .hero-image, .hero-image img{
-    }
-
 }
 /* desktop */
 @media screen and (min-width: 1280px) {
@@ -528,6 +532,9 @@ header .hamburger {
     display: none;
   }
 
+  .hero {
+    margin-bottom: 150px;
+  }
   .hero-div{
     margin: 100px;
     padding: 50px;
