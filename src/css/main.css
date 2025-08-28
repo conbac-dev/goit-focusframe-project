@@ -129,39 +129,36 @@ body {
   
   /* desktop */
   @media screen and (min-width: 1280px) {
-    .about-us-container ul {
+     .about-us-container ul {
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    gap: 30px; 
+    gap: 100px; 
+    margin: 60px 32px;
+  }
+   .about-us-container ul li:first-child {
+    flex: 1;
+    max-width: 560px; /* görselin taşmaması için */
+    max-height: 375px;
+    display: flex;
   }
 
   /* Görsel alanı */
-  .about-us-container ul li:first-child {
-    flex: 1;
-    max-width: 500px; /* görselin taşmaması için */
-    display: flex;
-    justify-content: center;
-  }
-
-  /* Metinler için kapsayıcı */
+}
   .about-us-texts {
     flex: 1;
     display: flex;
     flex-direction: row; 
     gap: 30px;
-    max-width: 600px;   /* metin çok yayılmasın */
+    max-width: 650px;   /* metin çok yayılmasın */
   }
-
-  .about-us-texts li {
-    flex: 1;
-  }
-
+  
   .about-us-paragraph {
     font-size: 16px;
-    line-height: 26px;
+    line-height: 20px;
+    letter-spacing: -2%;
+    font-weight: 400px;
   }
-}
   }
   @media screen and (min-width: 1440px){
     .about-us-container ul {
