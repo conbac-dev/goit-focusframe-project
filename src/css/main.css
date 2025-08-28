@@ -490,10 +490,6 @@ header .hamburger {
 @media screen and (min-width: 1440px) {
   /* our-mentors  */
 
-  #our-mentors {
-    margin-bottom: 150px;
-  }
-
   .our-mentors-container {
     max-width: 1240px;
   }
