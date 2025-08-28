@@ -366,61 +366,49 @@ header .hamburger {
 }
 /* reviews css Başlangıç */
 .reviews {
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  max-width: 360px;
   border: 1px solid #121212;
   background-color: #121212;
   padding: 80px 20px;
-  gap: 50px;
+  gap: 40px;
   justify-content: center;
-  align-items: center;
   /* mobil odaklı */
 }
 
 .reviews h2 {
   font-size: 28px;
   font-weight: 500px;
-  margin-bottom: 40px;
   color: #FFFFFF;
   letter-spacing: -0.04em;
   font-family: "DM Sans", sans-serif;
 }
 
-.review-container {
-  display: flex;
-  gap: 20px;
-  
-}
-
 .review-card {
+  display: flex;
+  flex-direction: column;
   background: #121212;
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 12px;
   padding: 12px;
-  
 }
 
 .review-card2 {
-  background: #121212;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 12px;
-  padding: 12px;
   display: none;
-
 }
 
 .review-header {
   display: flex;
   gap: 10px;
   flex-direction: column;
-  justify-content: space-between;
   align-items: flex-start;
 }
 
 .review-header img {
   width: 56px;
   height: 56px;
-  border-radius: 100%;
+  border-radius: 50%;
   object-fit: cover;
 
 }
@@ -444,7 +432,7 @@ header .hamburger {
   font-size: 20px;
   font-weight: 500px;
   font-family: "DM Sans", sans-serif;
-  color: #FFFFFF;
+  color: rgba(255, 255, 255, 1);
 }
 
 .review-info p {
@@ -457,27 +445,29 @@ header .hamburger {
 }
 
 .review-star-list{
-list-style: none;
-display: flex;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 4px;
 }
+
 .review-stars {
-  margin: 8px 0 16px;
-  justify-content: space-between;
-  margin-left: 65px;
+  margin: 4px 0 20px 65px;
 }
 
 .star {
-  margin-right: 4px;
   width: 16px;
   height: 16px;
   fill: #bea69e;
+  stroke-width: 1.50px;
+  stroke: #bea69e;
 }
 
 .review-text {
   font-size: 14px;
   line-height: 1.28571;
   letter-spacing: -0.02em;
-  color: #fff;
+  color: rgba(255, 255, 255, 1);
   font-weight: 400px;
   font-family: "DM Sans", sans-serif;
   margin: 0px;
@@ -485,39 +475,27 @@ display: flex;
 }
 
 .star.inactive {
-  width: 16px;
-  height: 16px;
-  fill: #FFFFFF;
+  width: 14px;
+  height: 14px;
+  fill: rgba(255, 255, 255, 0.2);
+  stroke-width: 1.50px;
+  stroke: #414141;
 }
 
 /* Tablet görünümü */
 @media screen and (min-width: 768px) {
   .reviews {
     width: 704px;
-    height: 300px;
     gap: 50px;
-    margin-bottom: 100px;
   }
 
   .reviews h2 {
   font-size: 48px;
   }
 
-  .review-container {
-    border-radius: 12px;
-    width: 640px;
-    height: 196px;
-    justify-content: center;
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-
   .review-card {
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 12px;
     width: 640px;
-    height: 196px;
-    
+    margin: 0px 32px 0px 32px;
   }
 
   .review-card2 {
@@ -525,13 +503,8 @@ display: flex;
   }
 
   .review-header {
-    display: flex;
     flex-direction: row;
-  }
-
-  .review-header img {
-    width: 56px;
-    height: 56px;
+    justify-content: space-between;
   }
 
   .review-info h3 {
@@ -541,28 +514,28 @@ display: flex;
 
   .review-text {
     font-size: 16px;
-    padding-top: 20px;
+    margin: 20px;
   }
 
-  
-  .star.inactive {
-    fill: #FFFFFF;
+  .star {
     width: 20px;
     height: 20px;
-    stroke: #121212;
+  }
+
+  .inactive {
+    width: 18px;
+    height: 18px;
+    stroke-width: 1px;
+      stroke: #414141;
+    fill: rgba(255, 255, 255, 0.2);
   }
 }
 
 /* Desktop görünümü */
 @media screen and (min-width: 1280px) {
   .reviews {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: column;
     gap: 50px;
     width: 1080px;
-    height: 320px;
     margin-bottom: 150px;
   }
   
@@ -574,9 +547,9 @@ display: flex;
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 12px;
     width: 520px;
-    height: 216px;
     display: block;
     justify-content: space-between;
+    padding: 12px;
   }
 
   .review-container {
@@ -585,23 +558,16 @@ display: flex;
     align-items: center;
     justify-content: flex-start;
     padding-left: 0px;
+    gap: 20px;
   }
-
+  
   .review-card {
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 12px;
     width: 520px;
-    height: 216px;
+    margin: 0%;
   }
 
   .review-stars {
     justify-content: space-between;
-  }
-
-  .star.inactive {
-    fill: #FFFFFF;
-    width: 20px;
-    height: 20px;
   }
 
 }
@@ -612,11 +578,9 @@ display: flex;
 }
 .review-card {
     width: 610px;
-    height: 196px;
-  }
+}
 .review-card2 {
   width: 610px;
-  height: 196px;
   display: block;
   justify-content: space-between;
 }
