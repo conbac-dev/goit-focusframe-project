@@ -32,13 +32,17 @@ body {
   font-weight: 700;
   font-style: normal;
 }
-@media screen and (min-width: 320px) {
-  #about-us {
+#about-us {
     color: #fff;
     padding: 60px 15px;
     display: flex;
     justify-content: center;
     flex-direction: column;
+  }
+    .about-us-texts {
+    display: flex;
+    flex-direction: column; 
+    gap: 15px;
   }
 
   .about-us-container {
@@ -86,16 +90,14 @@ body {
     margin-bottom: 20px;
     font-weight: 400;
   }
-  .about-us-texts {
-    max-width: 600px;
-    display: flex;
-    flex-direction: column; /* ALT ALTA DURMASI İÇİN EKLENDİ */
-    gap: 15px;
-  }
+
   @media screen and (max-width: 375px) {
   .about-us-container h2 {
     font-size: 28px;
   }
+}
+@media screen and (min-width: 320px) and (max-width: 374px) {
+
 }
 
   /* tablet */
@@ -114,13 +116,13 @@ body {
     display: block;
     margin: 40px;
   }
- 
   .about-us-texts {
     display: flex;
     gap: 20px; 
     justify-content: center;
     max-width: 800px;   
     margin: 20px auto 0; 
+    flex-direction: row;
   }
 
   .about-us-texts li {
@@ -146,11 +148,9 @@ body {
    .about-us-container ul li:first-child {
     flex: 1;
     max-width: 560px; 
+    max-height: 300px;
     display: flex;
   }
-
-  /* Görsel alanı */
-}
   .about-us-texts {
     flex: 1;
     display: flex;
@@ -182,11 +182,9 @@ body {
   }
 
   /* Görsel alanı */
-}
   .about-us-texts {
     flex: 1;
     display: flex;
-    flex-direction: row; 
     gap: 30px;
     max-width: 650px;   
   }
@@ -197,5 +195,6 @@ body {
     letter-spacing: -2%;
     font-weight: 400px;
   }
+}
   /* Genel */
   /* CSS Başlangıç */
