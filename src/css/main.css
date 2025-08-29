@@ -365,6 +365,12 @@ header .hamburger {
   
 }
 /* reviews css Başlangıç */
+/* mobil odaklı */
+.reviews-total{
+  margin: 0 auto;
+  width: 90%;
+}
+
 .reviews {
   display: flex;
   flex-direction: column;
@@ -373,8 +379,8 @@ header .hamburger {
   background-color: #121212;
   padding: 80px 20px;
   gap: 40px;
+  margin-bottom: 80px;
   justify-content: center;
-  /* mobil odaklı */
 }
 
 .reviews h2 {
@@ -392,6 +398,7 @@ header .hamburger {
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 12px;
   padding: 12px;
+  width: 335px;
 }
 
 .review-card2 {
@@ -400,7 +407,6 @@ header .hamburger {
 
 .review-header {
   display: flex;
-  gap: 10px;
   flex-direction: column;
   align-items: flex-start;
 }
@@ -487,6 +493,9 @@ header .hamburger {
   .reviews {
     width: 704px;
     gap: 50px;
+    margin-bottom: 85px;
+    justify-content: center;
+    width: 100%;
   }
 
   .reviews h2 {
@@ -514,7 +523,8 @@ header .hamburger {
 
   .review-text {
     font-size: 16px;
-    margin: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
   }
 
   .star {
@@ -522,11 +532,11 @@ header .hamburger {
     height: 20px;
   }
 
-  .inactive {
-    width: 18px;
-    height: 18px;
+  .star.inactive {
+    width: 20px;
+    height: 20px;
     stroke-width: 1px;
-      stroke: #414141;
+    stroke: #414141;
     fill: rgba(255, 255, 255, 0.2);
   }
 }
@@ -537,6 +547,8 @@ header .hamburger {
     gap: 50px;
     width: 1080px;
     margin-bottom: 150px;
+    justify-content: center;
+    width: 100%;
   }
   
   .reviews h2 {
@@ -546,24 +558,29 @@ header .hamburger {
   .review-card2 {
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 12px;
-    width: 520px;
+    width: 530px;
     display: block;
     justify-content: space-between;
     padding: 12px;
   }
+  
 
   .review-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    justify-content: flex-start;
+    /*justify-content: space-between;*/
     padding-left: 0px;
     gap: 20px;
   }
   
   .review-card {
-    width: 520px;
+    width: 530px;
     margin: 0%;
+  }
+
+  .review-card .review-text{
+    padding-bottom: 17px;
   }
 
   .review-stars {
@@ -575,14 +592,18 @@ header .hamburger {
 @media screen and (min-width: 1440px){
 .reviews{
   margin-bottom: 150px;
+  justify-content: center;
+  width: 100%;
 }
 .review-card {
     width: 610px;
 }
 .review-card2 {
   width: 610px;
-  display: block;
-  justify-content: space-between;
+}
+
+.review-card .review-text {
+  padding-bottom: 0px;
 }
 }
 /* Reviews css Bitiş */
