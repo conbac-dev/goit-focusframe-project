@@ -210,6 +210,163 @@ header {
   background-color: rgba(29, 29, 29, 1);
   color: rgba(190, 166, 158, 1);
 }
+
+/* hero */
+.hero {
+  background-image: url("../images/hero/graphic.png");
+  background-repeat: repeat;
+  background-size: contain;
+  background-position: center;
+  padding-bottom: 80px;
+  height: 866px;
+}
+.hero-div {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  border-radius: 30px;
+  background: #1d1d1d;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 20px;
+}
+
+.hero-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.hero-text-div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hero-title {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+  color: #fff;
+  margin-top: 40px;
+  width: 295px;
+}
+
+.hero-title span {
+  font-style: italic;
+  font-weight: 400;
+  color: #bea69e;
+}
+
+.hero-p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+
+.hero-stats {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.hero-students {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 4px;
+  width: 110px;
+}
+.hero-students img {
+  width: 109px;
+  height: 44px;
+}
+
+.hero-ok-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 4px;
+  width: 89px;
+}
+
+.hero-ok-div span {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.04em;
+  color: #fff;
+}
+.hero-ok {
+  fill: #bea69e;
+  width: 18px;
+  height: 18px;
+}
+.hero-reviews {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 12px;
+}
+.hero-star {
+  position: relative;
+  border-radius: 100%;
+  width: 44px;
+  height: 44px;
+  background: #bea69e;
+}
+.hero-star svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  fill: transparent;
+  stroke: black;
+  stroke-width: 2px;
+}
+.hero-review-div {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 4px;
+  width: 57px;
+  height: 40px;
+}
+.hero-text {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.04em;
+  color: rgba(255, 255, 255, 0.5);
+}
+.hero-review-div strong {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.125;
+  letter-spacing: -0.04em;
+  color: #fff;
+}
+.hero-image {
+  width: 259px;
+  height: 314px;
+  align-self: center;
+}
+.hero-image img {
+  width: 259px;
+}
+/* hero end */
+
 /* tablet */
 @media screen and (min-width: 768px) {
   .container {
@@ -325,6 +482,49 @@ header {
     background-color: rgba(29, 29, 29, 1);
     color: rgba(190, 166, 158, 1);
   }
+
+  /* hero */
+  .hero {
+    padding-bottom: 100px;
+    height: 966px;
+    background-size: 100% 100%;
+  }
+  .hero-div {
+    margin: 32px;
+  }
+  .hero-ok-div {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .hero-text-div {
+    width: 517px;
+  }
+  .hero-p {
+    width: 418px;
+  }
+  .hero-title {
+    font-size: 60px;
+    width: 498px;
+  }
+  .hero-students {
+    flex-direction: row;
+    width: 202px;
+    align-items: stretch;
+  }
+  .hero-text-container {
+    padding-left: 12px;
+  }
+  .hero-image {
+    width: 393px;
+    height: 434px;
+    overflow: hidden;
+  }
+  .hero-image img {
+    height: initial;
+    width: 100%;
+    object-fit: cover;
+  }
+  /* hero end */
 }
 /* desktop */
 @media screen and (min-width: 1280px) {
@@ -410,4 +610,37 @@ header {
     background-color: rgba(29, 29, 29, 1);
     color: rgba(190, 166, 158, 1);
   }
+
+  /* hero */
+  .hero {
+    padding-bottom: 150px;
+    height: 720px;
+  }
+  .hero-div {
+    margin: 100px;
+    padding: 50px;
+    padding-bottom: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .hero-text-container {
+    width: 517px;
+    justify-content: space-between;
+  }
+  .hero-text-div {
+    gap: 24px;
+  }
+  .hero-image,
+  .hero-image img {
+    width: 397px;
+    height: 520px;
+  }
+  .hero-title {
+    margin-top: 0;
+  }
+  .hero-stats {
+    margin-bottom: 50px;
+  }
+  /* hero end */
 }
