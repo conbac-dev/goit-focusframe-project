@@ -549,6 +549,85 @@ li {
 }
 /* our courses end */
 
+/* our-mentors */
+
+#our-mentors {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+
+.our-mentors-container {
+  max-width: 335px;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 48px;
+}
+
+.our-mentors-container h2 {
+  align-self: flex-start;
+
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 54px;
+  letter-spacing: -4%;
+  color: #ffffff;
+}
+
+.our-mentors-container h2 span {
+  color: #bea69e;
+}
+
+.our-mentors-container ul {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  gap: 38px;
+  color: #ffffff;
+  list-style: none;
+}
+
+.our-mentors-container ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.our-mentors-container ul li img {
+  border-radius: 50%;
+}
+
+.our-mentors-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.our-mentors-info h3 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 0;
+}
+
+.our-mentors-info p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -2%;
+
+  color: rgba(255, 255, 255, 0.5);
+}
+/* our-mentors end */
+
 /* tablet */
 @media screen and (min-width: 768px) {
   .container {
@@ -808,6 +887,36 @@ li {
     box-sizing: border-box;
   }
   /* our courses end */
+
+  /* our-mentors  */
+  #our-mentors {
+    margin-bottom: 100px;
+  }
+
+  .our-mentors-container {
+    max-width: 704px;
+  }
+
+  .our-mentors-container h2 {
+    font-size: 48px;
+  }
+
+  .our-mentors-container ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 488px;
+    gap: 100px;
+  }
+
+  .our-mentors-info h3 {
+    font-size: 28px;
+    line-height: 32px;
+  }
+  .our-mentors-info p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  /* our-mentors end */
 }
 /* desktop */
 @media screen and (min-width: 1280px) {
@@ -1022,6 +1131,20 @@ li {
     box-sizing: border-box;
   }
   /* our courses end */
+
+  /* our-mentors */
+  #our-mentors {
+    margin-bottom: 150px;
+  }
+
+  .our-mentors-container {
+    max-width: 1080px;
+  }
+
+  .our-mentors-container ul {
+    max-width: 1034px;
+  }
+  /* our-mentors end */
 }
 
 @media screen and (min-width: 1440px) {
@@ -1060,4 +1183,10 @@ li {
   .about-us-container h2 {
     margin: 0px 50px;
   }
+
+  /* our-mentors  */
+  .our-mentors-container {
+    max-width: 1240px;
+  }
+  /* our-mentors end */
 }
