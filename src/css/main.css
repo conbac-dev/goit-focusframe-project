@@ -240,7 +240,13 @@ header .hamburger {
 
     /*hero css*/
 .hero{
+  background-image: url("../images/hero/graphic.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   margin-bottom: 80px;
+  width: 1280px;
+  height: 720px;
 }
     .hero-div {
       display: flex;
