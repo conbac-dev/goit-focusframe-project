@@ -46,9 +46,7 @@ img {
 /* Genel */
 body {
   background-color: #121212;
-
   width: 100%;
-
   margin: 0 auto;
 }
 
@@ -71,370 +69,345 @@ body {
   font-style: normal;
 }
 
-/* Genel */
-/* CSS Başlangıç */
-@media screen and (min-width: 320px) {
-  .header-bg {
-    overflow: hidden;
-    background-position: bottom;
-    background-color: rgba(18, 18, 18, 1);
-    width: 100%;
-    height: 957px;
-    padding-top: 20px;
-  }
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1240px;
+  width: 100%;
+  margin: 20px;
+}
 
-  header .container {
-    height: 100%;
-    width: 100%;
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  background-image: url("../src/images/header/graphic.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-width: 375px;
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  height: 50px;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  flex-direction: row;
+}
+
+.logo a {
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+  font-size: 24px;
+}
+.menu-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+}
+.menu-toggle-checkbox,
+.close-menu-label,
+.mobile-image,
+.nav-links {
+  display: none;
+}
+.hamburger-menu-icon {
+  stroke: rgba(255, 255, 255, 1);
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  stroke-width: 2;
+  z-index: 1;
+}
+.camera-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  background-color: rgba(190, 166, 158, 0.4);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.camera-icon {
+  width: 16px;
+  height: 16px;
+}
+.camera-icon-div {
+  display: block;
+}
+#menu-toggle:checked ~ .nav-links {
+  position: absolute;
+  display: flex;
+  background-color: rgba(190, 166, 158, 1);
+  max-width: 218px;
+  height: 812px;
+  width: 100%;
+  top: 0px;
+  right: 0px;
+}
+#menu-toggle:checked ~ .nav-links ul {
+  display: flex;
+  flex-direction: column;
+  font-family: "DM Sans", sans-serif;
+  margin-top: 180px;
+  margin-left: 20px;
+  gap: 20px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+#menu-toggle:checked ~ .nav-links a {
+  color: rgba(18, 18, 18, 1);
+  font-weight: 400;
+}
+#menu-toggle:checked ~ .nav-links a:hover,
+#menu-toggle:checked ~ .nav-links a:active {
+  font-weight: 700;
+}
+#menu-toggle:checked ~ .close-menu-label {
+  position: absolute;
+  display: flex;
+  width: 32px;
+  height: 32px;
+  stroke: rgba(18, 18, 18, 1);
+  stroke-width: 3;
+  top: 20px;
+  right: 20px;
+  z-index: 2;
+}
+#menu-toggle:checked ~ .mobile-image {
+  display: flex;
+  position: absolute;
+  z-index: 3;
+  top: 483px;
+  right: 0px;
+}
+.sign-up-button {
+  display: none;
+
+  background-color: #fff;
+  height: 60px;
+  border-radius: 12px;
+  color: rgba(18, 18, 18, 1);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+  padding: 16px 84px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.sign-up-button:hover {
+  background-color: rgba(29, 29, 29, 1);
+  color: rgba(190, 166, 158, 1);
+}
+/* tablet */
+@media screen and (min-width: 768px) {
+  .container {
     display: flex;
-  }
-
-  header button {
-    background: none;
-    border: 0;
-    margin: 0;
-    outline: none;
-  }
-
-  header * {
-    transition: all 0.3s ease;
-  }
-
-  /*  */
-  /* HEADER SECTION*/
-  /*  */
-  header {
-    margin: 20px;
-    margin-top: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+    justify-content: space-between;
     align-items: center;
+    flex-direction: row;
   }
-
+  header {
+    display: flex;
+    max-width: 704px;
+    height: 60px;
+    padding: 22px 20px;
+  }
   .header-container {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     flex-direction: row;
-
-    justify-content: center;
+    margin-right: 20px;
   }
 
-  .header-components {
-    width: 100%;
-    height: 50px;
-    padding: 17px 20px;
+  .menu-container {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     gap: 14px;
-    color: #fff;
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    background-color: rgba(18, 18, 18, 1);
   }
 
-  .header-camera-bg {
+  .menu-toggle-checkbox,
+  .close-menu-label,
+  .mobile-image,
+  .nav-links {
+    display: none;
+  }
+  .hamburger-menu-icon {
+    stroke: rgba(255, 255, 255, 1);
+    width: 40px;
+    height: 38px;
+    cursor: pointer;
+    stroke-width: 2;
+  }
+  .camera-label {
+    display: none;
+  }
+
+  #menu-toggle:checked ~ .nav-links {
+    position: absolute;
+    display: flex;
+    background-color: rgba(190, 166, 158, 1);
+    max-width: 218px;
+    height: 812px;
+    width: 100%;
+    top: 0px;
+    right: 0px;
+    z-index: 2;
+  }
+  #menu-toggle:checked ~ .nav-links ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 180px;
+    margin-left: 20px;
+    gap: 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+  #menu-toggle:checked ~ .nav-links ul a {
+    color: rgba(18, 18, 18, 1);
+    font-weight: 400;
+  }
+  #menu-toggle:checked ~ .nav-links a:hover,
+  #menu-toggle:checked ~ .nav-links a:active {
+    font-weight: 700;
+  }
+  #menu-toggle:checked ~ .close-menu-label {
+    position: absolute;
+    display: flex;
     width: 32px;
     height: 32px;
-    border-radius: 50%;
-    margin-left: auto;
+    stroke: rgba(18, 18, 18, 1);
+    stroke-width: 3;
+    top: 20px;
+    right: 20px;
+  }
+  #menu-toggle:checked ~ .mobile-image {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(29, 29, 29, 1);
+    position: absolute;
+    z-index: 2;
+    top: 483px;
+    right: 0px;
   }
-
-  .header .camera {
-    width: 16px;
-    height: 16px;
-    color: rgba(190, 166, 158, 0.4);
+  .sign-up {
+    display: block;
   }
-
-  .header .camera:hover {
-    color: rgba(190, 166, 158, 1);
-  }
-
-  .header .hamburger {
-    width: 32px;
-    height: 22px;
-    color: white;
-  }
-
-  .header-nav {
-    display: none;
-  }
-
-  .header-sign-up-button {
-    display: none;
+  .sign-up-button {
+    display: flex;
     background-color: #fff;
-    height: 60px;
     border-radius: 12px;
+    padding: 16px 58px;
+    width: 186px;
+    height: 60px;
     color: rgba(18, 18, 18, 1);
     font-weight: 700;
     font-size: 18px;
     line-height: 28px;
     letter-spacing: 0px;
     text-transform: uppercase;
-    padding: 16px 84px;
     white-space: nowrap;
-  }
-
-  .header-sign-up-button:hover {
-    background-color: rgba(29, 29, 29, 1);
-    color: rgba(190, 166, 158, 1);
-  }
-
-  /*  */
-  /* MODAL */
-  /*  */
-
-  .is-open {
-    display: flex;
-    overflow: hidden;
-  }
-
-  .header-hamburger-modal-overlay {
-    display: none;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(18, 18, 18, 0.4);
-    z-index: 5;
-    top: 0;
-    left: 0;
-  }
-
-  .header-hamburger-modal {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    background-color: rgba(190, 166, 158, 1);
-    width: 218px;
-    height: 812px;
-    right: 0;
-    top: 0;
-    z-index: 6;
-    gap: 133px;
-  }
-
-  .header-hamburger-modal-x {
-    width: 32px;
-    height: 32px;
-    position: absolute;
-    top: 28px;
-    right: 28px;
-    fill: none;
-    stroke: rgba(18, 18, 18, 1);
-    stroke-width: 6px;
     cursor: pointer;
   }
 
-  .header-modal-nav {
-    margin-left: 20px;
-  }
-
-  .header-modal-nav-ul {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .header-modal-nav-ul a {
-    font-family: DM Sans;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    text-transform: uppercase;
-    color: rgba(18, 18, 18, 1);
-  }
-
-  .header-modal-nav-ul a:hover {
-    font-family: DM Sans;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    text-transform: uppercase;
-  }
-
-  .header-hamburger-modal img {
-    width: 100%;
-    height: auto;
-  }
-}
-/* tablet */
-@media screen and (min-width: 768px) {
-  .header-bg {
-    height: 1120px;
-  }
-
-  header {
-    margin-bottom: 0;
-  }
-
-  .header-container {
-    max-width: 704px;
-    padding: 0;
-  }
-
-  .header-components {
-    height: 60px;
-    width: 504px;
-    margin-right: 14px;
-  }
-
-  .header-camera-bg {
-    display: none;
-  }
-
-  .header-sign-up-button {
-    display: block;
-  }
-
-  /*  */
-  /* MODAL SECTION */
-  /*  */
-
-  .header .hamburger {
-    width: 40px;
-    height: 28px;
-    color: white;
-  }
-  .header-hamburger-modal-overlay {
-    position: fixed;
-    display: flex;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(18, 18, 18, 0.4);
-    z-index: 5;
-    top: 0;
-    left: 0;
-  }
-  .header-hamburger-modal {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    background-color: rgba(190, 166, 158, 1);
-    width: 480px;
-    height: 1024px;
-    right: 0;
-    top: 0;
-    z-index: 6;
-    gap: 114px;
-  }
-
-  .header-hamburger-modal img {
-    margin-left: 64px;
-    width: 100%;
-    height: auto;
-  }
-
-  .header-hamburger-modal-x {
-    top: 30px;
-    right: 42px;
-    width: 40px;
-    height: 40px;
-    stroke-width: 3px;
-  }
-
-  .header-modal-nav {
-    margin-left: 64px;
-  }
-
-  .header-modal-nav-ul {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    margin-left: 64px;
-    gap: 28px;
-  }
-
-  .header-modal-nav-ul a {
-    font-family: DM Sans;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    text-transform: uppercase;
-    color: rgba(18, 18, 18, 1);
-  }
-
-  .header-modal-nav-ul a:hover {
-    font-family: DM Sans;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    text-transform: uppercase;
+  .sign-up-button:hover {
+    background-color: rgba(29, 29, 29, 1);
+    color: rgba(190, 166, 158, 1);
   }
 }
 /* desktop */
 @media screen and (min-width: 1280px) {
-  .header-bg {
-    width: 100%;
-    height: 909px;
-    margin: 0 auto;
-  }
-
-  header .container {
-    width: 100%;
-    max-width: 1158px;
-  }
-
-  header {
+  .container {
     display: flex;
-    margin-bottom: 0;
-    gap: 20px;
-    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 0;
   }
-
-  .header-components {
-    height: 60px;
-    width: 982px;
-    padding: 0 50px;
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
     margin-right: 20px;
   }
+  header {
+    display: flex;
+    max-width: 1240px;
+    width: 100%;
+    height: 60px;
+  }
+  .logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .menu-container {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 0;
+    border: 1px solid red;
+  }
 
-  .header-camera-bg {
+  .menu-toggle-checkbox,
+  .close-menu-label,
+  .mobile-image,
+  .hamburger-menu-icon {
     display: none;
   }
 
-  .header-sign-up-button {
-    display: block;
-  }
-
-  .hamburger {
+  .camera-label {
     display: none;
   }
-
-  .header-nav {
-    display: block;
+  .nav-links {
+    display: flex;
   }
 
-  .header-nav-ul {
+  .container .nav-links ul {
     display: flex;
     flex-direction: row;
-    gap: 28px;
+    gap: 40px;
   }
 
-  .header-nav-ul a {
-    font-family: DM Sans;
+  .container .nav-links ul a {
+    font-family: "DM Sans", sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 100%;
     letter-spacing: 0%;
     text-transform: uppercase;
+    color: rgba(255, 255, 255, 1);
   }
 
-  .header-nav-ul a:hover {
+  .nav-links ul a:hover {
     color: rgba(190, 166, 158, 1);
   }
+  .sign-up {
+    display: block;
+  }
+  .sign-up-button {
+    display: flex;
 
-  .header-hamburger-modal-overlay {
-    display: none;
+    padding: 16px 84px;
+    width: 238px;
+    line-height: 156%;
+  }
+
+  .sign-up-button:hover {
+    background-color: rgba(29, 29, 29, 1);
+    color: rgba(190, 166, 158, 1);
   }
 }
