@@ -18,13 +18,35 @@ p {
   padding: 0;
   box-sizing: border-box;
 }
+p:last-child {
+  margin-bottom: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 /* Basit CSS Reset */
 /* Genel */
 body {
   background-color: #121212;
-  max-width: 1440px;
   width: 100%;
-
   margin: 0 auto;
 }
 
@@ -47,140 +69,132 @@ body {
   font-style: normal;
 }
 
-#about-us {
-  color: #fff;
-  padding: 60px 15px;
+.container {
   display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-.about-us-texts {
-  display: flex;
-  flex-direction: column;
-}
-
-.about-us-container {
-  font-family: "DM Sans", sans-serif;
-}
-
-/* Başlık */
-.about-us-container h2 {
-  font-size: 48px;
-  font-weight: 500;
-  line-height: 32px;
-  letter-spacing: -4%;
-}
-
-.about-us-container h2 span {
-  color: #bea69e;
-  margin-left: 5px;
-}
-
-/* Liste düzeni */
-.about-us-container ul {
-  list-style: none;
-}
-=======
-/* Genel */
-/* CSS Başlangıç */
-.header-bg {
-  overflow: hidden;
-  background-position: bottom;
-  background-color: rgba(18, 18, 18, 1);
-  width: 100%;
-  height: 957px;
-  padding-top: 20px;
-}
-
-header .container {
-  height: 100%;
-  width: 100%;
-  display: flex;
-}
-
-header button {
-  background: none;
-  border: 0;
-  margin: 0;
-  outline: none;
-}
-
-header * {
-  transition: all 0.3s ease;
-}
-
-/*  */
-/* HEADER SECTION*/
-/*  */
-header {
-  margin: 20px;
-  margin-top: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+  justify-content: space-between;
   align-items: center;
+  max-width: 1240px;
+  width: 100%;
+  margin: 20px;
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  background-image: url("../src/images/header/graphic.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-width: 375px;
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  height: 50px;
+}
 .header-container {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+
   flex-direction: row;
-  gap: 14px;
-  justify-content: center;
 }
 
-.header-components {
-  width: 100%;
-  height: 50px;
-  padding: 17px 20px;
+.logo a {
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+  font-size: 24px;
+}
+.menu-container {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   gap: 14px;
-  color: #fff;
-  border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  background-color: rgba(18, 18, 18, 1);
 }
-
-.header-camera-bg {
+.menu-toggle-checkbox,
+.close-menu-label,
+.mobile-image,
+.nav-links {
+  display: none;
+}
+.hamburger-menu-icon {
+  stroke: rgba(255, 255, 255, 1);
   width: 32px;
   height: 32px;
-  border-radius: 50%;
-  margin-left: auto;
+  cursor: pointer;
+  stroke-width: 2;
+  z-index: 1;
+}
+.camera-label {
   display: flex;
-  align-items: center;
   justify-content: center;
-
-  background-color: rgba(29, 29, 29, 1);
-}
-
-header .camera {
-  width: 16px;
-  height: 12px;
-  color: rgba(190, 166, 158, 0.4);
-}
-
-header .camera:hover {
-  color: rgba(190, 166, 158, 1);
-}
-
-header .hamburger {
+  align-items: center;
   width: 32px;
   height: 32px;
-  color: white;
+  background-color: rgba(190, 166, 158, 0.4);
+  border-radius: 50%;
+  cursor: pointer;
 }
-
-.header-nav {
-  display: none;
+.camera-icon {
+  width: 16px;
+  height: 16px;
 }
-
-.header-sign-up-button {
+.camera-icon-div {
+  display: block;
+}
+#menu-toggle:checked ~ .nav-links {
+  position: absolute;
+  display: flex;
+  background-color: rgba(190, 166, 158, 1);
+  max-width: 218px;
+  height: 812px;
+  width: 100%;
+  top: 0px;
+  right: 0px;
+}
+#menu-toggle:checked ~ .nav-links ul {
+  display: flex;
+  flex-direction: column;
+  font-family: "DM Sans", sans-serif;
+  margin-top: 180px;
+  margin-left: 20px;
+  gap: 20px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+#menu-toggle:checked ~ .nav-links a {
+  color: rgba(18, 18, 18, 1);
+  font-weight: 400;
+}
+#menu-toggle:checked ~ .nav-links a:hover,
+#menu-toggle:checked ~ .nav-links a:active {
+  font-weight: 700;
+}
+#menu-toggle:checked ~ .close-menu-label {
+  position: absolute;
+  display: flex;
+  width: 32px;
+  height: 32px;
+  stroke: rgba(18, 18, 18, 1);
+  stroke-width: 3;
+  top: 20px;
+  right: 20px;
+  z-index: 2;
+}
+#menu-toggle:checked ~ .mobile-image {
+  display: flex;
+  position: absolute;
+  z-index: 3;
+  top: 483px;
+  right: 0px;
+}
+.sign-up-button {
   display: none;
+
   background-color: #fff;
   height: 60px;
   border-radius: 12px;
-
   color: rgba(18, 18, 18, 1);
   font-weight: 700;
   font-size: 18px;
@@ -189,832 +203,211 @@ header .hamburger {
   text-transform: uppercase;
   padding: 16px 84px;
   white-space: nowrap;
-}
-
-.header-sign-up-button:hover {
-  background-color: rgba(29, 29, 29, 1);
-  color: rgba(190, 166, 158, 1);
-}
-
-/*  */
-/* MODAL */
-/*  */
-.display-none {
-  display: none;
-}
-
-.header-hamburger-modal-overlay {
-  display: none;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(18, 18, 18, 0.4);
-  z-index: 5;
-  top: 0;
-  left: 0;
-}
-
-.header-hamburger-modal {
-  position: absolute;
-  background-color: rgba(190, 166, 158, 1);
-  width: 218px;
-  height: 812px;
-  right: 0;
-  top: 0;
-  z-index: 6;
-
-  display: flex;
-  flex-direction: column;
-  gap: 133px;
-  justify-content: end;
-}
-
-.header-hamburger-modal-x {
-  width: 16px;
-  height: 16px;
-  position: absolute;
-  top: 28px;
-  right: 28px;
-  fill: none;
-  stroke: rgba(18, 18, 18, 1);
-  stroke-width: 6px;
-}
-
-.header-modal-nav {
-  margin-left: 20px;
-}
-
-.header-modal-nav-ul {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.header-modal-nav-ul a {
-  font-family: DM Sans;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 100%;
-  letter-spacing: 0%;
-  text-transform: uppercase;
-  color: rgba(18, 18, 18, 1);
-}
-
-.header-modal-nav-ul a:hover {
-  font-family: DM Sans;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 100%;
-  letter-spacing: 0%;
-  text-transform: uppercase;
-}
-
-.header-hamburger-modal img {
-  width: 100%;
-  height: auto;
-}
-
-
-/* --- MOBİL SİGN UP BAŞLANGICI --- */
-
-.signup-section {
-  background-color: #121212;
-  padding: 0 20px 80px;
-  height: 100%;
-}
-
-.sgn-desktop-container {
-  display: contents;
-}
-
-.sgn-container {
-  width: 100%;
-  height: 100%;
-  max-width: 480px;
-  margin-right: 0;
-  color: #ffffff;
-}
-
-.sgn-up-title,
-.sign-title {
-  width: 93px;
-  height: 32px;
-  font-weight: 500;
-  font-size: 28px;
-  line-height: 32px;
-  letter-spacing: -1.12px;
-  color: #ffffff;
-  margin-bottom: 20px;
-}
-
-.sgn-up-title {
-  color: #bea69e;
-}
-
-.sgn-explanation {
-  width: 100%;
-  min-height: 54px;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  letter-spacing: -0.28px;
-  margin-bottom: 40px;
-}
-
-.sgn-input-field {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
-.sgn-form-group {
-  margin-bottom: 8px;
-}
-
-.sgn-form-group:nth-child(3) {
-  margin-bottom: 40px;
-}
-
-.sgn-message-field,
-.sgn-input-style {
-  width: 100%;
-  height: 46px;
-  padding: 14px 18px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 12px;
-  background-color: transparent;
-  color: #ffffff;
-  font-family: "DM Sans", sans-serif;
-  opacity: 0.7;
-}
-
-.sgn-message-field:hover,
-.sgn-message-field:active,
-.sgn-input-style:hover,
-.sgn-input-style:active {
-  outline: none;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-}
-
-.sgn-message-field:focus,
-.sgn-input-style:focus {
-  outline: none;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-}
-
-.sgn-message-field::placeholder,
-.sgn-input-style::placeholder {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  letter-spacing: 0px;
-  font-family: "DM Sans", sans-serif;
-  color: #ffffff;
-}
-
-.sgn-message-field {
-  min-height: 112px;
-  resize: none;
-}
-
-label {
-  display: block;
-}
-
-.sgn-send-button {
-  height: 48px;
-  width: 100%;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  letter-spacing: 0px;
-  border: none;
-  border-radius: 12px;
-  margin-bottom: 20px;
-  color: #121212;
-  background-color: #ffffff;
-}
-
-.sgn-send-button:hover,
-.sgn-send-button:active {
-  color: #bea69e;
-  background-color: #1d1d1d;
-}
-
-.sgn-form-note {
-  width: 100%;
-  min-height: 48px;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 0px;
-  opacity: 0.5;
-}
-
-.sgn-privacy-link {
-  color: #ffffff;
-  text-decoration: underline;
   cursor: pointer;
 }
 
-.sgn-img-container {
-  display: none;
-}
-
-/*  --- MOBİL SİGN UP BİTİŞİ --- */
-
-/* our-mentors */
-
-#our-mentors {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 80px;
-}
-
-.our-mentors-container {
-  max-width: 335px;
-  width: 100%;
-
-/* Kamera görseli için yuvarlak arka plan */
-.about-us-container ul li:first-child {
-  max-width: 1280px;
-  width: 100%;
-  display: flex;
-
-  align-items: center;
-  justify-content: center;
-}
-
-.about-us-container ul li:first-child img {
-  max-width: 100%;
-  max-height: 100%;
-  display: block;
-  margin: 30px 0px 30px 0px;
-}
-/* Paragraflar */
-.about-us-paragraph {
-  font-size: 14px;
-  line-height: 18px;
-  letter-spacing: -2%;
-  margin-bottom: 10px;
-  font-weight: 400;
-  padding: 5px;
-}
-.about-us-container h2 {
-  margin: 0px 10px;
-}
-
-@media screen and (max-width: 375px) {
-  .about-us-container h2 {
-    font-size: 28px;
-  }
-}
-@media screen and (min-width: 320px) and (max-width: 374px) {
-}
-
-/* tablet */
-@media screen and (min-width: 768px) {
-  .about-us-container ul li:first-child {
-    width: 700px;
-    margin: 0px auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-  }
-
-  .about-us-container ul li:first-child img {
-  width: 768px;
-  height: 335px;
-  transform: scale(1);
-  display: block;
-  object-fit: cover;
-  overflow: hidden;
-  border-radius: 250px;          
-  }
-  .about-us-texts {
-    display: flex;
-    justify-content: center;
-    max-width: 800px;
-    margin: 20px auto 32px;
-    flex-direction: row;
-    gap: 20px;
-  }
-
-  .about-us-texts li {
-    flex: 1;
-  }
-
-  .about-us-paragraph {
-    font-size: 16px;
-    line-height: 24px;
-  }
-  .about-us-container h2 {
-    margin: 0px 32px;
-  }
-}
-
-/* desktop */
-@media screen and (min-width: 1280px) {
-  .about-us-container ul {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    align-items: center;
-    padding: 30px 15px 30px 15px;
-  }
-  .about-us-container ul li:first-child img{
-  width: 570px;
-  height: 275px;
-  transform: scale(1);
-  display: block;
-  object-fit: cover;
-  overflow: hidden;
-  border-radius: 250px;     
-  position: relative;     
-  }
-  
-  .about-us-texts {
-    display: flex;
-    flex-direction: row;
-    max-width: 595px;
-  }
-
-  .about-us-paragraph {
-    font-size: 16px;
-    line-height: 20px;
-    letter-spacing: -2%;
-    font-weight: 200px;
-  }
-  .about-us-container h2 {
-    margin: 0px 50px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  gap: 48px;
-}
-
-.our-mentors-container h2 {
-  align-self: flex-start;
-
-  font-weight: 500;
-  font-size: 28px;
-  line-height: 54px;
-  letter-spacing: -4%;
-  color: #ffffff;
-}
-
-.our-mentors-container h2 span {
-  color: #bea69e;
-}
-
-.our-mentors-container ul {
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
-  gap: 38px;
-  color: #ffffff;
-  list-style: none;
-}
-
-.our-mentors-container ul li {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 16px;
-}
-
-.our-mentors-container ul li img {
-  border-radius: 50%;
-}
-
-.our-mentors-info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 4px;
-}
-
-.our-mentors-info h3 {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
-  margin-bottom: 0;
-}
-
-.our-mentors-info p {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: -2%;
-
-  color: rgba(255, 255, 255, 0.5);
-}
-/* our-mentors end*/
-
-/*kauçuk*/
-@media screen and (min-width: 320px) and (max-width: 374px) {
+.sign-up-button:hover {
+  background-color: rgba(29, 29, 29, 1);
+  color: rgba(190, 166, 158, 1);
 }
 /* tablet */
 @media screen and (min-width: 768px) {
-  .header-bg {
-    height: 1120px;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
   }
-
   header {
-    margin-bottom: 0;
-  }
-
-  .header-container {
+    display: flex;
     max-width: 704px;
-    padding: 0;
-  }
-
-  .header-components {
     height: 60px;
-    width: 504px;
+    padding: 22px 20px;
+  }
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin-right: 20px;
   }
 
-  .header-camera-bg {
+  .menu-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .menu-toggle-checkbox,
+  .close-menu-label,
+  .mobile-image,
+  .nav-links {
+    display: none;
+  }
+  .hamburger-menu-icon {
+    stroke: rgba(255, 255, 255, 1);
+    width: 40px;
+    height: 38px;
+    cursor: pointer;
+    stroke-width: 2;
+  }
+  .camera-label {
     display: none;
   }
 
-  .header-sign-up-button {
-    display: block;
-  }
-
-  /*  */
-  /* MODAL SECTION */
-  /*  */
-  .header-hamburger-modal {
-    width: 480px;
-    height: 1024px;
-
-    gap: 114px;
-  }
-
-  .header-hamburger-modal-x {
-    top: 30px;
-    right: 42px;
-    width: 20px;
-    height: 20px;
-    stroke-width: 3px;
-  }
-
-
-  .header-modal-nav {
-    margin-left: 64px;
-  }
-
-  .header-modal-nav-ul {
-    gap: 28px;
-  }
-
-  .header-hamburger-modal img {
+  #menu-toggle:checked ~ .nav-links {
+    position: absolute;
+    display: flex;
+    background-color: rgba(190, 166, 158, 1);
+    max-width: 218px;
+    height: 812px;
     width: 100%;
-    height: auto;
+    top: 0px;
+    right: 0px;
+    z-index: 2;
   }
-
-  /*  --- TABLET SİGN UP BAŞLANGICI --- */
-
-  .sgn-img-container,
-  .sgn-desktop-container {
-    display: contents;
+  #menu-toggle:checked ~ .nav-links ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 180px;
+    margin-left: 20px;
+    gap: 20px;
+    text-transform: uppercase;
+    font-size: 14px;
   }
-
-  .signup-section {
-    padding: 0 32px 100px;
+  #menu-toggle:checked ~ .nav-links ul a {
+    color: rgba(18, 18, 18, 1);
+    font-weight: 400;
   }
-
-  .sgn-up-title,
-  .sign-title {
-    width: 159px;
-    height: 54px;
-    font-size: 48px;
-    line-height: 54px;
-    letter-spacing: -1.92px;
+  #menu-toggle:checked ~ .nav-links a:hover,
+  #menu-toggle:checked ~ .nav-links a:active {
+    font-weight: 700;
   }
-
-  .sgn-explanation {
-    min-height: 40px;
-    font-size: 16px;
-    line-height: 20px;
-    letter-spacing: -0.32px;
+  #menu-toggle:checked ~ .close-menu-label {
+    position: absolute;
+    display: flex;
+    width: 32px;
+    height: 32px;
+    stroke: rgba(18, 18, 18, 1);
+    stroke-width: 3;
+    top: 20px;
+    right: 20px;
   }
-
-  .sgn-form-group {
-    margin-bottom: 14px;
+  #menu-toggle:checked ~ .mobile-image {
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    top: 483px;
+    right: 0px;
   }
-
-  .sgn-message-field,
-  .sgn-input-style {
-    height: 60px;
-    padding: 20px 18px;
-  }
-
-  .sgn-message-field::placeholder,
-  .sgn-input-style::placeholder {
-    font-size: 16px;
-    line-height: 20px;
-  }
-
-  .sgn-message-field {
-    min-height: 119px;
-  }
-
-  .sgn-label {
+  .sign-up {
     display: block;
   }
-
-  .sgn-send-button {
+  .sign-up-button {
+    display: flex;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 16px 58px;
+    width: 186px;
     height: 60px;
+    color: rgba(18, 18, 18, 1);
+    font-weight: 700;
     font-size: 18px;
     line-height: 28px;
-    margin-bottom: 20.71px;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    cursor: pointer;
   }
 
-  .sgn-form-note {
-    min-height: 36px;
-    font-size: 14px;
-    line-height: 18px;
+  .sign-up-button:hover {
+    background-color: rgba(29, 29, 29, 1);
+    color: rgba(190, 166, 158, 1);
   }
-
-  .sgn-img-container {
-    display: none;
-  }
-
-  /* --- TABLET SİGN UP BİTİŞİ --- */
-
-
-  .header-modal-nav {
-    margin-left: 64px;
-  }
-
-  .header-modal-nav-ul {
-    gap: 28px;
-  }
-
-  .header-hamburger-modal img {
-    width: 100%;
-    height: auto;
-  }
-
-  /* our-mentors  */
-  #our-mentors {
-    margin-bottom: 100px;
-  }
-
-  .our-mentors-container {
-    max-width: 704px;
-  }
-
-  .our-mentors-container h2 {
-    font-size: 48px;
-  }
-
-  .our-mentors-container ul {
-    flex-direction: row;
-    flex-wrap: wrap;
-    max-width: 488px;
-    gap: 100px;
-  }
-
-  .our-mentors-info h3 {
-    font-size: 28px;
-    line-height: 32px;
-  }
-  .our-mentors-info p {
-    font-size: 14px;
-    line-height: 18px;
-  }
-  /* our-mentors end */
-
 }
 /* desktop */
 @media screen and (min-width: 1280px) {
-  #our-mentors {
-    margin-bottom: 150px;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 0;
   }
-
-  .header-bg {
-    height: 909px;
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin-right: 20px;
   }
-
-  header .container {
-    margin: 0 auto;
-    justify-content: center;
-    width: 100%;
-  }
-
   header {
-    margin-bottom: 0;
-    gap: 80px;
-  }
-
-  .header-components {
+    display: flex;
+    max-width: 1240px;
+    width: 100%;
     height: 60px;
-    width: 822px;
-    padding: 0 50px;
+  }
+  .logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .menu-container {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 0;
+    border: 1px solid red;
   }
 
-  .header-camera-bg {
+  .menu-toggle-checkbox,
+  .close-menu-label,
+  .mobile-image,
+  .hamburger-menu-icon {
     display: none;
   }
 
-  .header-sign-up-button {
-    display: block;
-  }
-
-  .hamburger {
+  .camera-label {
     display: none;
   }
-
-  .header-nav {
-    display: block;
+  .nav-links {
+    display: flex;
   }
 
-  .header-nav-ul {
+  .container .nav-links ul {
     display: flex;
     flex-direction: row;
-    gap: 28px;
+    gap: 40px;
   }
 
-  .header-nav-ul a {
-    font-family: DM Sans;
+  .container .nav-links ul a {
+    font-family: "DM Sans", sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 100%;
     letter-spacing: 0%;
     text-transform: uppercase;
+    color: rgba(255, 255, 255, 1);
   }
 
-  .header-nav-ul a:hover {
+  .nav-links ul a:hover {
     color: rgba(190, 166, 158, 1);
   }
-
-  .header-hamburger-modal-overlay {
-    display: none;
+  .sign-up {
+    display: block;
   }
-
-
-  /* --- DESKTOP SİGN UP BAŞLANGICI --- */
-
-  .sgn-desktop-container {
+  .sign-up-button {
     display: flex;
-    max-width: 1240px;
-    min-height: 578px;
-    position: relative;
-    gap: 60px;
+
+    padding: 16px 84px;
+    width: 238px;
+    line-height: 156%;
   }
 
-  .signup-section {
-    padding: 0 100px 150px;
-  }
-
-  .sgn-message-field {
-    min-height: 120px;
-  }
-
-  .sgn-send-button {
-    margin-bottom: 20px;
-  }
-
-  .sgn-img-container {
-    display: flex;
-    position: absolute;
-    top: 0;
-    right: 0;
-    min-height: 540px;
-    width: auto;
-    gap: 20px;
-  }
-
-  .sgn-small-backround {
-    display: flex;
-    width: 180px;
-    height: 288px;
-    background-color: #bea69e;
-    border-radius: 1000px;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    align-self: flex-end;
-  }
-
-  .sgn-large-backround {
-    display: flex;
-    min-width: 340px;
-    min-height: 296px;
-    background-color: #1d1d1d;
-    border-radius: 1000px;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .sgn-img-lens {
-    width: 200px;
-    height: 192px;
-    margin: 40px 56px 0 0;
-  }
-
-  .sgn-img-camera {
-    width: 240px;
-    height: 296px;
-    margin: 156px 50px 88px;
-  }
-
-  /* --- DESKTOP SİGN UP BİTİŞİ --- */
-}
-
-@media screen and (min-width: 1440px) {
-  .about-us-container ul {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    align-items: center;
-    padding: 30px 5px 0px 35px;
-  }
-  .about-us-container ul li:first-child img{
-  width: 670px;
-  height: 275px;
-  transform: scale(1);
-  display: block;
-  object-fit: cover;
-  overflow: hidden;
-  border-radius: 250px;     
-  position: relative;     
-  }
-  
-  .about-us-texts {
-    display: flex;
-    flex-direction: row;
-    max-width: 755px;
-    gap: 30px;
-    padding: 20px 50px;
-  }
-
-  .about-us-paragraph {
-    font-size: 16px;
-    line-height: 20px;
-    letter-spacing: -2%;
-    font-weight: 400px;
-  }
-  .about-us-container h2 {
-    margin: 0px 50px;
+  .sign-up-button:hover {
+    background-color: rgba(29, 29, 29, 1);
+    color: rgba(190, 166, 158, 1);
   }
 }
-/* Genel */
-/* CSS Başlangıç */
-
-/* @media screen and (min-width: 1440px) üzeri */
-
-/* --- SİGN UP 1440PX ÜZERİ BAŞLANGICI --- */
-
-@media screen and (min-width: 1440px) {
-  .sgn-desktop-container {
-    margin: 0 auto;
-  }
-  .sgn-small-backround {
-    width: 190px;
-  }
-
-  .sgn-large-backround {
-    min-width: 350px;
-  }
-
-  .sgn-img-lens {
-    width: 213px;
-    height: 204px;
-    margin: 40px 60px 0 0;
-  }
-
-  .sgn-img-camera {
-    width: 254px;
-    height: 313px;
-    margin: 139px 48px 88px;
-  }
-}
-/* --- SİGN UP 1440PX ÜZERİ BİRİŞİ --- */
-
-  /* our-mentors */
-  .our-mentors-container {
-    max-width: 1080px;
-  }
-
-  .our-mentors-container ul {
-    max-width: 1034px;
-  }
-  /* our-mentors end */
-}
-
-@media screen and (min-width: 1440px) {
-  /* our-mentors  */
-
-  .our-mentors-container {
-    max-width: 1240px;
-  }
-  /* our-mentors end */
-}
-
