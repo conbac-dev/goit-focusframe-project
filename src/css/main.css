@@ -38,6 +38,7 @@ body {
     padding: 60px 15px;
     display: flex;
     justify-content: center;
+    flex-direction: column;
   }
 
   .about-us-container {
@@ -50,13 +51,8 @@ body {
     font-weight: 500;
     line-height: 32px;
     letter-spacing: -4%;
-  
-    @media (max-width: 375px) {
-          font-size: 28px;
-        }
   }
   
-
   .about-us-container h2 span {
     color: #bea69e;
     margin-left: 5px;
@@ -84,12 +80,23 @@ body {
   }
   /* Paragraflar */
   .about-us-paragraph {
-    size: 14px;
+    font-size: 14px;
     line-height: 18px;
     letter-spacing: -2%;
     margin-bottom: 20px;
     font-weight: 400;
   }
+  .about-us-texts {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column; /* ALT ALTA DURMASI İÇİN EKLENDİ */
+    gap: 15px;
+  }
+  @media screen and (max-width: 375px) {
+  .about-us-container h2 {
+    font-size: 28px;
+  }
+}
 
   /* tablet */
   @media screen and (min-width: 768px) {
@@ -107,17 +114,17 @@ body {
     display: block;
     margin: 40px;
   }
-    /* Paragrafları kapsayan div */
+ 
   .about-us-texts {
     display: flex;
-    gap: 20px; /* paragraf arası boşluk */
+    gap: 20px; 
     justify-content: center;
-    max-width: 800px;   /* yazıların genişliği */
-    margin: 20px auto 0; /* ortalama */
+    max-width: 800px;   
+    margin: 20px auto 0; 
   }
 
   .about-us-texts li {
-    flex: 1; /* İki paragraf eşit genişlik alsın */
+    flex: 1; 
   }
 
   .about-us-paragraph {
@@ -138,8 +145,7 @@ body {
   }
    .about-us-container ul li:first-child {
     flex: 1;
-    max-width: 560px; /* görselin taşmaması için */
-    max-height: 375px;
+    max-width: 560px; 
     display: flex;
   }
 
@@ -150,7 +156,7 @@ body {
     display: flex;
     flex-direction: row; 
     gap: 30px;
-    max-width: 650px;   /* metin çok yayılmasın */
+    max-width: 650px;   
   }
   
   .about-us-paragraph {
@@ -170,7 +176,7 @@ body {
   }
    .about-us-container ul li:first-child {
     flex: 1;
-    max-width: 560px; /* görselin taşmaması için */
+    max-width: 560px; 
     max-height: 300px;
     display: flex;
   }
@@ -182,7 +188,7 @@ body {
     display: flex;
     flex-direction: row; 
     gap: 30px;
-    max-width: 650px;   /* metin çok yayılmasın */
+    max-width: 650px;   
   }
   
   .about-us-paragraph {
