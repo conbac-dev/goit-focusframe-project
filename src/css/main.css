@@ -241,12 +241,11 @@ header .hamburger {
     /*hero css*/
 .hero{
   background-image: url("../images/hero/graphic.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-repeat: repeat;
+  background-size: contain;
   background-position: center;
-  margin-bottom: 80px;
-  width: 1280px;
-  height: 720px;
+  padding-bottom: 80px;
+  height: 866px;
 }
     .hero-div {
       display: flex;
@@ -456,7 +455,9 @@ header .hamburger {
       height: auto;
     }
     .hero{
-      margin-bottom: 100px;
+      padding-bottom: 100px;
+      height: 966px;
+      background-size: 100% 100%;
     }
     .hero-div{
       margin: 32px;
@@ -558,7 +559,8 @@ header .hamburger {
   }
 
   .hero {
-    margin-bottom: 150px;
+    padding-bottom: 150px;
+    height: 720px;
   }
   .hero-div{
     margin: 100px;
