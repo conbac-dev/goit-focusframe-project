@@ -370,7 +370,7 @@ header {
 /* about us */
 #about-us {
   color: #fff;
-  padding: 60px 15px;
+  margin: 20px 20px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -386,7 +386,7 @@ header {
 
 /* Başlık */
 .about-us-container h2 {
-  font-size: 48px;
+  font-size: 28px;
   font-weight: 500;
   line-height: 32px;
   letter-spacing: -4%;
@@ -394,7 +394,7 @@ header {
 
 .about-us-container h2 span {
   color: #bea69e;
-  margin-left: 5px;
+  margin-left: 7px;
 }
 
 /* Liste düzeni */
@@ -415,19 +415,19 @@ header {
   max-width: 100%;
   max-height: 100%;
   display: block;
-  margin: 30px 0px 30px 0px;
+  margin: 30px 0px 30px 10px;
 }
 /* Paragraflar */
 .about-us-paragraph {
   font-size: 14px;
   line-height: 18px;
-  letter-spacing: -2%;
+  letter-spacing: -0.32px;
   margin-bottom: 10px;
   font-weight: 400;
-  padding: 5px;
+  padding: 15px 0px;
 }
 .about-us-container h2 {
-  margin: 0px 10px;
+  margin: 10px 0px;
 }
 /* about us end */
 
@@ -1123,12 +1123,28 @@ label {
   /* hero end */
 
   /* about us */
+  .about-us-paragraph {
+  margin-left: 32px;
+  padding: 0;
+  font-size: 16px;
+  line-height: 21px;
+  }
+  .about-us-container h2 span {
+  margin-left: 15px;
+  }
   .about-us-container ul li:first-child {
     width: 700px;
     margin: 0px auto;
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  .about-us-container h2 {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: -4%;
+  margin: 0px 32px;
   }
 
   .about-us-container ul li:first-child img {
@@ -1142,25 +1158,15 @@ label {
   }
   .about-us-texts {
     display: flex;
-    justify-content: center;
-    max-width: 800px;
-    margin: 20px auto 32px;
+    justify-content: flex-start;
+    max-width: 720px;
+    margin: 25px auto;
     flex-direction: row;
-    gap: 20px;
   }
 
   .about-us-texts li {
     flex: 1;
   }
-
-  .about-us-paragraph {
-    font-size: 16px;
-    line-height: 24px;
-  }
-  .about-us-container h2 {
-    margin: 0px 32px;
-  }
-
   /* about us end */
 
   /* our courses */
@@ -1544,33 +1550,38 @@ label {
     align-items: flex-start;
     justify-content: center;
     align-items: center;
-    padding: 30px 15px 30px 15px;
+    margin: 0px 100px;
   }
   .about-us-container ul li:first-child img {
-    width: 570px;
-    height: 275px;
-    transform: scale(1);
+    width: 600px;
+    height: 320px;
+    transform: scale(0.75);
     display: block;
-    object-fit: cover;
+    object-fit: none;
     overflow: hidden;
     border-radius: 250px;
-    position: relative;
+    position: absolute;
+    top: 1410px;
+    left: 20px;
   }
 
   .about-us-texts {
     display: flex;
     flex-direction: row;
-    max-width: 595px;
+    max-width: 575px;
+    margin-bottom: 100px;
+    gap: 20px;
+    margin-top: 45px;
   }
 
   .about-us-paragraph {
     font-size: 16px;
     line-height: 20px;
     letter-spacing: -2%;
-    font-weight: 200px;
+    margin: 0 auto;
   }
   .about-us-container h2 {
-    margin: 0px 50px;
+    margin: 40px 100px;
   }
   /* about us end */
 
@@ -1787,17 +1798,18 @@ label {
     align-items: flex-start;
     justify-content: center;
     align-items: center;
-    padding: 30px 5px 0px 35px;
+margin: 0px 100px;
   }
   .about-us-container ul li:first-child img {
     width: 670px;
-    height: 275px;
-    transform: scale(1);
+    height: 300px;
+    transform: scale(0.7);
     display: block;
     object-fit: cover;
     overflow: hidden;
     border-radius: 250px;
-    position: relative;
+    position: absolute;
+    top: 1355px;
   }
 
   .about-us-texts {
@@ -1805,7 +1817,7 @@ label {
     flex-direction: row;
     max-width: 755px;
     gap: 30px;
-    padding: 20px 50px;
+    padding: 20px 70px;
   }
 
   .about-us-paragraph {
@@ -1815,7 +1827,7 @@ label {
     font-weight: 400px;
   }
   .about-us-container h2 {
-    margin: 0px 50px;
+    margin: 0px 100px;
   }
 
   /* our-mentors  */
