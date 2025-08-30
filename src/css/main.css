@@ -1023,28 +1023,29 @@ label {
 
 /* Master your photography skills with us ! KUTLUHAN  */
 /* Photography Skills Section */
-.photography-skills {
-  padding: 24px 100px;
-  text-align: left;
+  .photography-skills {
+  padding: 24px 20px;
+  text-align: center;
   width: 100%;
   position: relative;
   border-top: 1px solid #BEA69E;
   border-bottom: 1px solid #BEA69E;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .photography-title {
   font-family: "DM Sans", sans-serif;
   font-size: 59px;
   font-weight: 400;
-  font-style: normal;
   line-height: 64px;
-  letter-spacing: -2%;
+  letter-spacing: -0.02em;
   text-transform: uppercase;
-  width: 1239px;
-  height: 64px;
-  margin: 0;
-  display: block;
-  opacity: 1;
+  margin: 0 auto;
+  display: inline-block;
+  text-align: center;
+  max-width: 90%;
 }
 
 .title-brown {
