@@ -776,19 +776,21 @@ label {
 
 /* reviews */
 .reviews-total {
+  width: 100%;
+  max-width: 374px;
   margin: 0 auto;
-  width: 90%;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 .reviews {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: clamp(0px, 100%, 342px);
   border: 1px solid #121212;
   background-color: #121212;
-  padding: 80px 20px;
   gap: 40px;
-  margin-bottom: 80px;
+  margin: 80px auto;
   justify-content: center;
 }
 
@@ -1322,11 +1324,16 @@ label {
   /* sign up end */
 
   /* sign up */
+  .reviews-total{
+    max-width: 768px;
+    margin: 115px 23px 85px 41px;
+  }
+
   .reviews {
     width: 704px;
     gap: 50px;
-    margin-bottom: 85px;
-    justify-content: center;
+    
+    /*justify-content: center;*/
     width: 100%;
   }
 
@@ -1715,10 +1722,14 @@ label {
   /* sign up end */
 
   /* reviews */
+  .reviews-total {
+    max-width: 1080px;
+    margin: 150px 100px;
+  }
+
   .reviews {
     gap: 50px;
     width: 1080px;
-    margin-bottom: 150px;
     justify-content: center;
     width: 100%;
   }
@@ -1739,9 +1750,8 @@ label {
   .review-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    /*justify-content: space-between;*/
-    padding-left: 0px;
+    align-items: flex-start;
+    justify-content: flex-start;
     gap: 20px;
   }
 
@@ -1850,11 +1860,20 @@ label {
   /* sign up end */
 
   /* reviews */
-  .reviews {
-    margin-bottom: 150px;
-    justify-content: center;
-    width: 100%;
+  .reviews-total {
+    max-width: 1240px;
+    margin: 150px 100px;
   }
+
+  .reviews {
+    width: 1240px;
+  }
+
+.review-container {
+  width: 1240px;
+
+}
+
   .review-card {
     width: 610px;
   }
@@ -2145,3 +2164,4 @@ label {
   }
   /* footer end */
 }
+
