@@ -803,23 +803,167 @@ label {
 /* sign up end */
 
 /* reviews */
+@media screen and (min-width: 320px) and (max-width: 374px) {
+  .reviews-total {
+      display: flex;
+      flex-direction: column;
+      max-width: 320px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 0px;
+      box-sizing: border-box;
+      justify-content: center;
+      align-items: center;
+    }
+    .reviews {
+      display: flex;
+      flex-direction: column;
+      max-width: 335px;
+      width: 100%;
+      border: 1px solid #121212;
+      background-color: #121212;
+      gap: 40px;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 80px;
+      padding: 0px;
+    }
+
+    .reviews h2 {
+      font-size: 28px;
+      font-weight: 500px;
+      color: #ffffff;
+      letter-spacing: -0.04em;
+      font-family: "DM Sans", sans-serif;
+      align-self: flex-start;
+        align-self: flex-start;
+          margin-left: 20px;
+    }
+
+  .review-card {
+    max-width: 280px;
+    display: flex;
+      flex-direction: column;
+      background: #121212;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 12px;
+      padding: 12px;
+      
+      width: 100%;
+  }
+    .review-card2 {
+      display: none;
+    }
+  
+    .review-header {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .review-header img {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  
+    .review-author {
+      display: flex;
+      gap: 10px;
+      justify-content: flex-start;
+      align-items: center;
+    }
+  
+    .review-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 5px;
+    }
+  
+    .review-info h3 {
+      margin: 0;
+      font-size: 20px;
+      font-weight: 500px;
+      font-family: "DM Sans", sans-serif;
+      color: rgba(255, 255, 255, 1);
+    }
+  
+    .review-info p {
+      margin: 0;
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.5);
+      font-weight: 400px;
+      font-family: "DM Sans", sans-serif;
+      letter-spacing: -0.02em;
+    }
+  
+    .review-star-list {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 4px;
+    }
+  
+    .review-stars {
+      margin: 4px 0 20px 65px;
+    }
+  
+    .star {
+      width: 16px;
+      height: 16px;
+      fill: #bea69e;
+      stroke-width: 1.5px;
+      stroke: #bea69e;
+    }
+  
+    .review-text {
+      font-size: 14px;
+      line-height: 1.28571;
+      letter-spacing: -0.02em;
+      color: rgba(255, 255, 255, 1);
+      font-weight: 400px;
+      font-family: "DM Sans", sans-serif;
+      margin: 0px;
+      padding: 0;
+    }
+  
+    .star.inactive {
+      width: 14px;
+      height: 14px;
+      fill: rgba(255, 255, 255, 0.2);
+      stroke-width: 1.5px;
+      stroke: #414141;
+    }
+}
+
+@media screen and (min-width: 375px){
 .reviews-total {
+  display: flex;
+  flex-direction: column;
+  max-width: 375px;
   width: 100%;
-  max-width: 374px;
   margin: 0 auto;
   padding: 0px;
   box-sizing: border-box;
-}
+  justify-content: center;
+  align-items: center;
+  }
+
 
 .reviews {
   display: flex;
   flex-direction: column;
-  width: clamp(0px, 100%, 342px);
+  max-width: 335px;
+  width: 100%;
   border: 1px solid #121212;
   background-color: #121212;
   gap: 40px;
-  margin: 80px auto;
   justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
+  padding: 0px;
 }
 
 .reviews h2 {
@@ -828,6 +972,7 @@ label {
   color: #ffffff;
   letter-spacing: -0.04em;
   font-family: "DM Sans", sans-serif;
+  align-self: flex-start;
 }
 
 .review-card {
@@ -837,7 +982,8 @@ label {
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 12px;
   padding: 12px;
-  width: 335px;
+  max-width: 335px;
+  width: 100%;
 }
 
 .review-card2 {
@@ -925,6 +1071,10 @@ label {
   stroke-width: 1.5px;
   stroke: #414141;
 }
+
+
+/* reviews end */
+
 
 /* Mobile/Footer KUTLUHAN */
 .footer {
@@ -1421,23 +1571,28 @@ label {
   /* sign up */
   .reviews-total{
     max-width: 768px;
-    margin: 115px 23px 85px 41px;
+    margin: 0 auto;
   }
 
   .reviews {
-    width: 704px;
+    max-width: 704px;
     gap: 50px;
-    
-    /*justify-content: center;*/
+    justify-content: center;
+    align-items: center;
     width: 100%;
+    padding: 0px;
+    margin-bottom: 100px;
   }
 
   .reviews h2 {
     font-size: 48px;
+    align-self: flex-start;
+    margin-left: 0px;
+    
   }
 
   .review-card {
-    width: 640px;
+    max-width: 640px;
     margin: 0px 32px 0px 32px;
   }
 
@@ -1794,19 +1949,26 @@ label {
 
   /* reviews */
   .reviews-total {
-    max-width: 1080px;
-    margin: 150px 100px;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0px;
+    
   }
 
   .reviews {
     gap: 50px;
-    width: 1080px;
-    justify-content: center;
+    max-width: 1080px;
     width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin-bottom: 150px;
   }
 
   .reviews h2 {
     font-size: 48px;
+    align-self: flex-start;
+    margin-left: 0px;
   }
 
   .review-card2 {
@@ -1827,8 +1989,9 @@ label {
   }
 
   .review-card {
-    width: 530px;
+    max-width: 530px;
     margin: 0%;
+    margin-left: 0px;
   }
 
   .review-card .review-text {
@@ -1983,21 +2146,29 @@ label {
 
   /* reviews */
   .reviews-total {
-    max-width: 1240px;
-    margin: 150px 100px;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0px;
   }
 
   .reviews {
-    width: 1240px;
+    max-width: 1240px;
+    padding: 0px;
   }
 
-.review-container {
-  width: 1240px;
+  .reviews h2 {
+    font-size: 48px;
+    align-self: flex-start;
+    margin-left: 0px;
+  }
 
-}
+  .review-container {
+  width: 1240px;
+  }
 
   .review-card {
-    width: 610px;
+    max-width: 610px;
+    margin-left: 0px;
   }
   .review-card2 {
     width: 610px;
@@ -2007,7 +2178,6 @@ label {
     padding-bottom: 0px;
   }
   /* reviews end */
-
 
   /* Desktop/Footer Kutluhan 1440 */
         .footer {
@@ -2120,3 +2290,4 @@ label {
           margin-right: -100px;
         }
 }
+
