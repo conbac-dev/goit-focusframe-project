@@ -34,7 +34,10 @@
       <div class="menu-container">
 
         <!-- toggle checkbox -->
-        <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox">
+        <label class="menu-toggle-label">
+          <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox" aria-label="Toggle menu">
+          <span class="visually-hidden">Toggle menu</span>
+        </label>
         <!-- toggle checkbox end -->
 
         <!-- svg icons -->
@@ -89,10 +92,10 @@
       <!-- header right end -->
 
     </div>
-
+    <a href="#sign-up" title="Sign up for our courses">
     <button class="header-button">
       SIGN UP
-    </button>
+    </button></a>
     <!-- header-container end -->
 
   </header>
@@ -221,7 +224,7 @@
                     <!-- burada numara ve iconu 2 div yapıp space-between ile 2 uca gönderdik -->
                     <div class="courses-card-number">01</div>
                     <div class="courses-card-svg">
-                      <a href="#sign-up">
+                      <a href="#sign-up" title="Sign up for our course">
                         <svg class="vektor-ok" viewBox="0 0 32 32">
                           <use href="./src/images/icons.svg#icon-arrow2"></use>
                         </svg></a>
@@ -243,7 +246,7 @@
                   <div class="courses-card-numberline">
                     <div class="courses-card-number">02</div>
                     <div class="courses-card-svg">
-                      <a href="#sign-up">
+                      <a href="#sign-up" title="Sign up for our course">
                         <svg class="vektor-ok" viewBox="0 0 32 32">
                           <use href="./src/images/icons.svg#icon-arrow2"></use>
                         </svg></a>
@@ -265,7 +268,7 @@
                   <div class="courses-card-numberline">
                     <div class="courses-card-number">03</div>
                     <div class="courses-card-svg">
-                      <a href="#sign-up">
+                      <a href="#sign-up" title="Sign up for our course">
                         <svg class="vektor-ok" viewBox="0 0 32 32">
                           <use href="./src/images/icons.svg#icon-arrow2"></use>
                         </svg></a>
@@ -375,7 +378,7 @@
                 <textarea class="sgn-message-field" name="message" id="message" placeholder="Message"></textarea>
               </label>
             </div>
-            <button class="sgn-send-button">SEND</button>
+            <button type="submit" class="sgn-send-button">SEND</button>
             <p class="sgn-form-note">
               By clicking on "Send" button, you agree to our
               <a href="" class="sgn-privacy-link">Privacy Policy</a>, and allow
