@@ -523,7 +523,7 @@ li {
 .courses-card-top {
   display: flex;
   flex-direction: column;
-
+  color: #FFFFFF;
   margin-bottom: 8px;
 }
 .courses-card-numberline {
@@ -565,7 +565,7 @@ li {
 .courses-card-desc {
   max-width: 279px;
   margin: 28px 28px 28px 28px;
-
+  color: #ffffff;
   opacity: 0.5;
 }
 
