@@ -1236,7 +1236,7 @@ label {
   color: #FFFFFF;
 }
 /* Master your photography skills with us ! KUTLUHAN  */
-
+}
 /* tablet */
 @media screen and (min-width: 768px) {
 #header {
@@ -2114,13 +2114,13 @@ label {
   .about-us-container {
   position: relative; 
   max-width: 1440px;
-}
+  }
   .about-us-container ul {
     display: flex;
     align-items: flex-start;
     justify-content: center;
     align-items: center;
-margin: 0px 100px;
+    margin: 0px 100px;
   }
   .about-us-container ul li:first-child img {
     width: 670px;
@@ -2328,5 +2328,4 @@ margin: 0px 100px;
         .footer-copyright {
           margin-right: -100px;
         }
-}
-
+      }
