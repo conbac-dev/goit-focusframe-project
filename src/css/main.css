@@ -1545,6 +1545,17 @@ label {
   /* hero end */
 
   /* about us */
+  #about-us{
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;   
+  margin-bottom: 30px;
+  }
+  .about-us-container {
+  position: relative; 
+  max-width: 1280px;
+}
   .about-us-container ul {
     display: flex;
     align-items: flex-start;
@@ -1561,7 +1572,7 @@ label {
     overflow: hidden;
     border-radius: 250px;
     position: absolute;
-    top: 1410px;
+    top: 90px;
     left: 20px;
   }
 
@@ -1793,6 +1804,17 @@ label {
 }
 
 @media screen and (min-width: 1440px) {
+  #about-us{
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;   
+  margin-bottom: 30px;
+  }
+  .about-us-container {
+  position: relative; 
+  max-width: 1440px;
+}
   .about-us-container ul {
     display: flex;
     align-items: flex-start;
@@ -1809,7 +1831,7 @@ margin: 0px 100px;
     overflow: hidden;
     border-radius: 250px;
     position: absolute;
-    top: 1355px;
+    top: 35px;
   }
 
   .about-us-texts {
