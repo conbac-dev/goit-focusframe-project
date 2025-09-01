@@ -18,66 +18,85 @@
 </head>
 
 <body>
-  <div class="container">
-    <!-- header -->
-    <header>
-      <div class="header-container"></div>
+  <!-- header -->
+  <header id="header">
+  
+    <!-- header-container -->
+    <div class="header-container">
+  
       <!-- header left -->
       <div class="logo">
         <a href="#">Focus.Frame</a>
       </div>
       <!-- header left end -->
+  
       <!-- header right -->
       <div class="menu-container">
+  
         <!-- toggle checkbox -->
-        <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox" />
+        <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox">
         <!-- toggle checkbox end -->
+  
         <!-- svg icons -->
-        <div class="camera-icon-div">
-          <label class="camera-label">
-            <svg class="camera-icon">
-              <use href="./src/images/icons.svg#camera"></use>
-            </svg>
-          </label>
-        </div>
+        <label class="camera-label">
+          <svg class="camera-icon">
+            <use href="./src/images/icons.svg#camera"></use>
+          </svg>
+        </label>
+  
         <label for="menu-toggle" class="hamburger-menu-label">
           <svg class="hamburger-menu-icon">
             <use href="./src/images/icons.svg#hamburger-menu"></use>
           </svg>
         </label>
-      </div>
-
-      <div>
+  
         <label for="menu-toggle" class="close-menu-label">
           <svg class="close-menu-icon">
             <use href="./src/images/icons.svg#close"></use>
           </svg>
         </label>
-
         <!-- svg icons end -->
+  
         <!-- links -->
         <nav class="nav-links">
           <ul>
-            <li><a href="#about-us">About Us</a></li>
-            <li><a href="#our-courses">Our Courses</a></li>
-            <li><a href="#our-mentors">Our Mentors</a></li>
-            <li><a href="#reviews">Reviews</a></li>
-            <li><a href="#footer">Contacts</a></li>
+            <li>
+              <a href="#about-us">About Us</a>
+            </li>
+            <li>
+              <a href="#our-courses">Our Courses</a>
+            </li>
+            <li>
+              <a href="#our-mentors">Our Mentors</a>
+            </li>
+            <li>
+              <a href="#reviews">Reviews</a>
+            </li>
+            <li>
+              <a href="#footer">Contacts</a>
+            </li>
           </ul>
         </nav>
         <!-- links end -->
+  
+        <picture>
+          <source srcset="./src/images/header/header-hero-image-2.png" media="(min-width: 768px)">
+  
+          <img class="mobile-image" src="./src/images/header/header-hero-image-1.png" alt="camera">
+        </picture>
+  
       </div>
-
-      <img class="mobile-image" src="./src/images/header/au-mobile.jpg" alt="camera" />
-
-      <div class="sign-up">
-        <button class="sign-up-button" type="button">Sign up</button>
-      </div>
-
       <!-- header right end -->
-    </header>
-    <!-- header end -->
-  </div>
+  
+    </div>
+  
+    <button class="header-button">
+      SIGN UP
+    </button>
+    <!-- header-container end -->
+  
+  </header>
+  <!-- header end -->
 
   <main>
     <!-- hero -->
@@ -125,16 +144,20 @@
     </section>
     <!-- hero end -->
 
-    <!-- Master your photography skills with us! kısmı -->
-    <section class="photography-skills">
-      <h1 class="photography-title">
-        <span class="title-brown">MASTER </span>
-        <span span class="title-white">YOUR PHOTOGRAPHY </span>
-        <span class="title-brown">SKILLS WITH US!</span>
-      </h1>
-    </section>
-    <!-- Master your photography skills with us! kısmı end -->
-
+  <!-- with us -->
+  <section id="with-us" class="container">
+  
+    <div class="with-us-container">
+  
+      <p class="with-us-title">
+        <span>Master&nbsp;</span>
+        your photography&nbsp;
+        <span>skills with us!</span>
+      </p>
+  
+    </div>
+  </section>
+  <!-- with us end -->
 
     <!-- About Us -->
     <section id="about-us">
@@ -173,7 +196,7 @@
     </section>
     <!-- About Us end -->
 
-    <section>
+    <section id="our-courses">
       <!-- Genel kapsayıcı div ekliyoruz class courses-wrapper -->
       <div class="courses-wrapper">
         <!-- Başlık ve kartları kapsayan ana blok -->
@@ -329,7 +352,7 @@
     <!-- our mentors end -->
 
     <!-- sign up -->
-    <section class="signup-section" id="sign-up">
+    <section id="sign-up" class="signup-section">
       <div class="sgn-desktop-container">
         <div class="sgn-container">
           <h1 class="sign-title">Sign <span class="sgn-up-title">Up</span></h1>
@@ -374,7 +397,7 @@
 
 
     <!-- reviews -->
-    <section class="reviews-total">
+    <section id="reviews" class="reviews-total">
       <div class="reviews">
         <h2>Reviews</h2>
         <div class="review-container">
@@ -477,7 +500,7 @@
     <!-- reviews end -->
   </main>
 
-  <footer class="footer">
+  <footer id="footer" class="footer">
     <!-- Decorative Lines -->
 <div class="footer-maincontainer">
       <div class="footer-container">
