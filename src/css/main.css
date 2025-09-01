@@ -71,8 +71,8 @@ body {
 }
 #header {
   display: flex;
-    align-items: center;
-    justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .header-button {
@@ -139,9 +139,9 @@ body {
   cursor: pointer;
 }
 
-#menu-toggle:checked~.nav-links {
+#menu-toggle:checked ~ .nav-links {
   display: flex;
-  background-color:rgba(190, 166, 158, 1);
+  background-color: rgba(190, 166, 158, 1);
   height: 50.75rem;
   position: absolute;
   max-width: 13.625rem;
@@ -152,7 +152,7 @@ body {
   z-index: 1;
 }
 
-#menu-toggle:checked~.nav-links ul {
+#menu-toggle:checked ~ .nav-links ul {
   display: flex;
   flex-direction: column;
   margin-top: 11.25rem;
@@ -164,18 +164,18 @@ body {
   text-transform: uppercase;
 }
 
-#menu-toggle:checked~.nav-links a {
+#menu-toggle:checked ~ .nav-links a {
   text-decoration: none;
   color: rgba(18, 18, 18, 1);
   font-weight: 400;
 }
 
-#menu-toggle:checked~.nav-links a:hover,
-#menu-toggle:checked~.nav-links a:active {
+#menu-toggle:checked ~ .nav-links a:hover,
+#menu-toggle:checked ~ .nav-links a:active {
   font-weight: 700;
 }
 
-#menu-toggle:checked~.close-menu-label {
+#menu-toggle:checked ~ .close-menu-label {
   display: flex;
   width: 2rem;
   height: 2rem;
@@ -188,7 +188,7 @@ body {
   z-index: 2;
 }
 
-#menu-toggle:checked~picture .mobile-image {
+#menu-toggle:checked ~ picture .mobile-image {
   display: flex;
 
   position: absolute;
@@ -197,7 +197,7 @@ body {
   right: 0px;
 }
 /* hero */
-#header{
+#header {
   background-image: url("../images/hero/graphic.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -205,10 +205,10 @@ body {
   height: 70px;
 }
 .hero {
-    background-image: url("../images/hero/graphic.png");
-      background-repeat: repeat;
-      background-size: contain;
-      background-position: center;
+  background-image: url("../images/hero/graphic.png");
+  background-repeat: repeat;
+  background-size: contain;
+  background-position: center;
   padding-bottom: 80px;
   height: 866px;
 }
@@ -397,7 +397,7 @@ body {
 /* about us */
 #about-us {
   color: #fff;
-  margin: 20px 20px;
+  margin: 0 20px 80px 20px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -410,6 +410,11 @@ body {
 
 .about-us-container {
   font-family: "DM Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
 }
 
 /* Başlık */
@@ -418,11 +423,21 @@ body {
   font-weight: 500;
   line-height: 32px;
   letter-spacing: -4%;
+
+  align-self: flex-start;
 }
 
 .about-us-container h2 span {
   color: #bea69e;
   margin-left: 7px;
+}
+
+.aboutus-image-class {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
 }
 
 /* Liste düzeni */
@@ -467,6 +482,8 @@ body {
   margin: 0 auto; /* wrapper'ı ortala */
   padding: 0 20px; /* içte 20px nefes alanı */
   box-sizing: border-box; /* padding+border genişliğe dahil */
+
+  margin-bottom: 5rem;
 }
 .courses-wrapper ul,
 ol,
@@ -480,7 +497,7 @@ li {
   display: flex;
   flex-direction: column;
   width: clamp(0px, 100%, 342px); /* 342'yi geçme, küçükte %100 kal */
-  margin: 20px auto; /* DÜZELTİLDİ: yatayda ortala */
+  margin: 0 auto; /* DÜZELTİLDİ: yatayda ortala */
 
   box-sizing: border-box;
   overflow-wrap: anywhere;
@@ -523,7 +540,7 @@ li {
 .courses-card-top {
   display: flex;
   flex-direction: column;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 8px;
 }
 .courses-card-numberline {
@@ -805,276 +822,273 @@ label {
 /* reviews */
 @media screen and (min-width: 320px) and (max-width: 374px) {
   .reviews-total {
-      display: flex;
-      flex-direction: column;
-      max-width: 320px;
-      width: 100%;
-      margin: 0 auto;
-      padding: 0px;
-      box-sizing: border-box;
-      justify-content: center;
-      align-items: center;
-    }
-    .reviews {
-      display: flex;
-      flex-direction: column;
-      max-width: 335px;
-      width: 100%;
-      border: 1px solid #121212;
-      background-color: #121212;
-      gap: 40px;
-      justify-content: center;
-      align-items: center;
-      margin-bottom: 80px;
-      padding: 0px;
-    }
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+  }
+  .reviews {
+    display: flex;
+    flex-direction: column;
+    max-width: 335px;
+    width: 100%;
+    border: 1px solid #121212;
+    background-color: #121212;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+    padding: 0px;
+  }
 
-    .reviews h2 {
-      font-size: 28px;
-      font-weight: 500px;
-      color: #ffffff;
-      letter-spacing: -0.04em;
-      font-family: "DM Sans", sans-serif;
-      align-self: flex-start;
-        align-self: flex-start;
-          margin-left: 20px;
-    }
+  .reviews h2 {
+    font-size: 28px;
+    font-weight: 500px;
+    color: #ffffff;
+    letter-spacing: -0.04em;
+    font-family: "DM Sans", sans-serif;
+    align-self: flex-start;
+    align-self: flex-start;
+    margin-left: 20px;
+  }
 
   .review-card {
     max-width: 280px;
     display: flex;
-      flex-direction: column;
-      background: #121212;
-      border: 1px solid rgba(255, 255, 255, 0.2);
-      border-radius: 12px;
-      padding: 12px;
-      
-      width: 100%;
-  }
-    .review-card2 {
-      display: none;
-    }
-  
-    .review-header {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-    .review-header img {
-      width: 56px;
-      height: 56px;
-      border-radius: 50%;
-      object-fit: cover;
-    }
-  
-    .review-author {
-      display: flex;
-      gap: 10px;
-      justify-content: flex-start;
-      align-items: center;
-    }
-  
-    .review-info {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      gap: 5px;
-    }
-  
-    .review-info h3 {
-      margin: 0;
-      font-size: 20px;
-      font-weight: 500px;
-      font-family: "DM Sans", sans-serif;
-      color: rgba(255, 255, 255, 1);
-    }
-  
-    .review-info p {
-      margin: 0;
-      font-size: 12px;
-      color: rgba(255, 255, 255, 0.5);
-      font-weight: 400px;
-      font-family: "DM Sans", sans-serif;
-      letter-spacing: -0.02em;
-    }
-  
-    .review-star-list {
-      list-style: none;
-      display: flex;
-      justify-content: center;
-      gap: 4px;
-    }
-  
-    .review-stars {
-      margin: 4px 0 20px 65px;
-    }
-  
-    .star {
-      width: 16px;
-      height: 16px;
-      fill: #bea69e;
-      stroke-width: 1.5px;
-      stroke: #bea69e;
-    }
-  
-    .review-text {
-      font-size: 14px;
-      line-height: 1.28571;
-      letter-spacing: -0.02em;
-      color: rgba(255, 255, 255, 1);
-      font-weight: 400px;
-      font-family: "DM Sans", sans-serif;
-      margin: 0px;
-      padding: 0;
-    }
-  
-    .star.inactive {
-      width: 14px;
-      height: 14px;
-      fill: rgba(255, 255, 255, 0.2);
-      stroke-width: 1.5px;
-      stroke: #414141;
-    }
-}
+    flex-direction: column;
+    background: #121212;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    padding: 12px;
 
-@media screen and (min-width: 375px){
-.reviews-total {
-  display: flex;
-  flex-direction: column;
-  max-width: 375px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0px;
-  box-sizing: border-box;
-  justify-content: center;
-  align-items: center;
+    width: 100%;
+  }
+  .review-card2 {
+    display: none;
   }
 
+  .review-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-.reviews {
-  display: flex;
-  flex-direction: column;
-  max-width: 335px;
-  width: 100%;
-  border: 1px solid #121212;
-  background-color: #121212;
-  gap: 40px;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 80px;
-  padding: 0px;
+  .review-header img {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .review-author {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .review-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .review-info h3 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 500px;
+    font-family: "DM Sans", sans-serif;
+    color: rgba(255, 255, 255, 1);
+  }
+
+  .review-info p {
+    margin: 0;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 400px;
+    font-family: "DM Sans", sans-serif;
+    letter-spacing: -0.02em;
+  }
+
+  .review-star-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+  }
+
+  .review-stars {
+    margin: 4px 0 20px 65px;
+  }
+
+  .star {
+    width: 16px;
+    height: 16px;
+    fill: #bea69e;
+    stroke-width: 1.5px;
+    stroke: #bea69e;
+  }
+
+  .review-text {
+    font-size: 14px;
+    line-height: 1.28571;
+    letter-spacing: -0.02em;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 400px;
+    font-family: "DM Sans", sans-serif;
+    margin: 0px;
+    padding: 0;
+  }
+
+  .star.inactive {
+    width: 14px;
+    height: 14px;
+    fill: rgba(255, 255, 255, 0.2);
+    stroke-width: 1.5px;
+    stroke: #414141;
+  }
 }
 
-.reviews h2 {
-  font-size: 28px;
-  font-weight: 500px;
-  color: #ffffff;
-  letter-spacing: -0.04em;
-  font-family: "DM Sans", sans-serif;
-  align-self: flex-start;
-}
+@media screen and (min-width: 375px) {
+  .reviews-total {
+    display: flex;
+    flex-direction: column;
+    max-width: 375px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+  }
 
-.review-card {
-  display: flex;
-  flex-direction: column;
-  background: #121212;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 12px;
-  padding: 12px;
-  max-width: 335px;
-  width: 100%;
-}
+  .reviews {
+    display: flex;
+    flex-direction: column;
+    max-width: 335px;
+    width: 100%;
+    border: 1px solid #121212;
+    background-color: #121212;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+    padding: 0px;
+  }
 
-.review-card2 {
-  display: none;
-}
+  .reviews h2 {
+    font-size: 28px;
+    font-weight: 500px;
+    color: #ffffff;
+    letter-spacing: -0.04em;
+    font-family: "DM Sans", sans-serif;
+    align-self: flex-start;
+  }
 
-.review-header {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
+  .review-card {
+    display: flex;
+    flex-direction: column;
+    background: #121212;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    padding: 12px;
+    max-width: 335px;
+    width: 100%;
+  }
 
-.review-header img {
-  width: 56px;
-  height: 56px;
-  border-radius: 50%;
-  object-fit: cover;
-}
+  .review-card2 {
+    display: none;
+  }
 
-.review-author {
-  display: flex;
-  gap: 10px;
-  justify-content: flex-start;
-  align-items: center;
-}
+  .review-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-.review-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 5px;
-}
+  .review-header img {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
 
-.review-info h3 {
-  margin: 0;
-  font-size: 20px;
-  font-weight: 500px;
-  font-family: "DM Sans", sans-serif;
-  color: rgba(255, 255, 255, 1);
-}
+  .review-author {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: center;
+  }
 
-.review-info p {
-  margin: 0;
-  font-size: 12px;
-  color: rgba(255, 255, 255, 0.5);
-  font-weight: 400px;
-  font-family: "DM Sans", sans-serif;
-  letter-spacing: -0.02em;
-}
+  .review-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+  }
 
-.review-star-list {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 4px;
-}
+  .review-info h3 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 500px;
+    font-family: "DM Sans", sans-serif;
+    color: rgba(255, 255, 255, 1);
+  }
 
-.review-stars {
-  margin: 4px 0 20px 65px;
-}
+  .review-info p {
+    margin: 0;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 400px;
+    font-family: "DM Sans", sans-serif;
+    letter-spacing: -0.02em;
+  }
 
-.star {
-  width: 16px;
-  height: 16px;
-  fill: #bea69e;
-  stroke-width: 1.5px;
-  stroke: #bea69e;
-}
+  .review-star-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+  }
 
-.review-text {
-  font-size: 14px;
-  line-height: 1.28571;
-  letter-spacing: -0.02em;
-  color: rgba(255, 255, 255, 1);
-  font-weight: 400px;
-  font-family: "DM Sans", sans-serif;
-  margin: 0px;
-  padding: 0;
-}
+  .review-stars {
+    margin: 4px 0 20px 65px;
+  }
 
-.star.inactive {
-  width: 14px;
-  height: 14px;
-  fill: rgba(255, 255, 255, 0.2);
-  stroke-width: 1.5px;
-  stroke: #414141;
-}
+  .star {
+    width: 16px;
+    height: 16px;
+    fill: #bea69e;
+    stroke-width: 1.5px;
+    stroke: #bea69e;
+  }
 
+  .review-text {
+    font-size: 14px;
+    line-height: 1.28571;
+    letter-spacing: -0.02em;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 400px;
+    font-family: "DM Sans", sans-serif;
+    margin: 0px;
+    padding: 0;
+  }
+
+  .star.inactive {
+    width: 14px;
+    height: 14px;
+    fill: rgba(255, 255, 255, 0.2);
+    stroke-width: 1.5px;
+    stroke: #414141;
+  }
 }
 /* reviews end */
-
 
 /* Mobile/Footer KUTLUHAN */
 .footer {
@@ -1086,12 +1100,12 @@ label {
 }
 
 .footer-maincontainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    padding: 40px 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 40px 20px 20px 20px;
 }
 
 .footer-container {
@@ -1167,7 +1181,7 @@ label {
   height: 60px;
   width: 100%;
   border-radius: 12px;
-  background-color: #1D1D1D;
+  background-color: #1d1d1d;
   color: #ffffff;
   border: none;
 }
@@ -1203,13 +1217,13 @@ label {
 
 /* Master your photography skills with us ! KUTLUHAN  */
 /* Photography Skills Section */
-  .photography-skills {
+.photography-skills {
   padding: 24px 20px;
   text-align: center;
   width: 100%;
   position: relative;
-  border-top: 1px solid #BEA69E;
-  border-bottom: 1px solid #BEA69E;
+  border-top: 1px solid #bea69e;
+  border-bottom: 1px solid #bea69e;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1229,17 +1243,17 @@ label {
 }
 
 .title-brown {
-  color: #BEA69E;
+  color: #bea69e;
 }
 
 .title-white {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 /* Master your photography skills with us ! KUTLUHAN  */
 
 /* tablet */
 @media screen and (min-width: 768px) {
-#header {
+  #header {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1273,8 +1287,8 @@ label {
   }
 
   .header-button:hover {
-    background-color:rgba(29, 29, 29, 1);
-    color:rgba(190, 166, 158, 1);
+    background-color: rgba(29, 29, 29, 1);
+    color: rgba(190, 166, 158, 1);
   }
 
   .header-container {
@@ -1296,22 +1310,22 @@ label {
     height: 2.5rem;
   }
 
-  #menu-toggle:checked~.nav-links {
+  #menu-toggle:checked ~ .nav-links {
     max-width: 30rem;
   }
 
-  #menu-toggle:checked~.nav-links ul {
+  #menu-toggle:checked ~ .nav-links ul {
     margin-top: 14.5rem;
     gap: 1.75rem;
     margin-left: 4rem;
   }
 
-  #menu-toggle:checked~.close-menu-label {
+  #menu-toggle:checked ~ .close-menu-label {
     width: 2.5rem;
     height: 2.5rem;
   }
 
-  #menu-toggle:checked~picture .mobile-image {
+  #menu-toggle:checked ~ picture .mobile-image {
     top: 34.25rem;
   }
 
@@ -1357,28 +1371,39 @@ label {
     object-fit: cover;
   }
   /* hero end */
- .with-us-container {
-   max-width: 52.5rem;
-   padding: 1.5rem 0px;
+  .with-us-container {
+    max-width: 52.5rem;
+    padding: 1.5rem 0px;
 
-   margin-bottom: 6.25rem;
- }
+    margin-bottom: 6.25rem;
+  }
 
- .with-us-title {
-   font-size: 2.5rem;
-   line-height: 3.125rem;
-   letter-spacing: 0.06rem;
- }
+  .with-us-title {
+    font-size: 2.5rem;
+    line-height: 3.125rem;
+    letter-spacing: 0.06rem;
+  }
   /* about us */
+
+  .about-us-container {
+    gap: 50px;
+  }
+
+  .aboutus-image-class {
+    gap: 50px;
+  }
+
   .about-us-paragraph {
-  margin-left: 32px;
-  padding: 0;
-  font-size: 16px;
-  line-height: 21px;
+    padding: 0;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.02rem;
   }
+
   .about-us-container h2 span {
-  margin-left: 15px;
+    margin-left: 15px;
   }
+
   .about-us-container ul li:first-child {
     width: 700px;
     margin: 0px auto;
@@ -1386,12 +1411,13 @@ label {
     align-items: center;
     justify-content: center;
   }
+
   .about-us-container h2 {
-  font-size: 48px;
-  font-weight: 500;
-  line-height: 32px;
-  letter-spacing: -4%;
-  margin: 0px 32px;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 0.04rem;
+    margin: 0px 32px;
   }
 
   .about-us-container ul li:first-child img {
@@ -1403,16 +1429,19 @@ label {
     overflow: hidden;
     border-radius: 250px;
   }
+
   .about-us-texts {
     display: flex;
-    justify-content: flex-start;
-    max-width: 720px;
-    margin: 25px auto;
     flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    max-width: 600px;
+
+    gap: 40px;
   }
 
   .about-us-texts li {
-    flex: 1;
+    max-width: 280px;
   }
   /* about us end */
 
@@ -1420,14 +1449,13 @@ label {
   .courses-wrapper {
     max-width: 760px;
     padding: 0 20px;
-    margin: 0 auto;
+    margin: 0 auto 100px auto;
     box-sizing: border-box;
   }
 
   .courses-main {
     width: 100%;
     max-width: 704px; /* 335 + 335 + 20(gap) = 690 → 704 güvenli */
-    margin: 20px auto;
   }
 
   .courses-main > ul {
@@ -1470,7 +1498,7 @@ label {
     align-self: stretch;
     flex-direction: row;
     gap: 12px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     justify-content: space-between;
     box-sizing: border-box;
   }
@@ -1575,7 +1603,7 @@ label {
   /* sign up end */
 
   /* sign up */
-  .reviews-total{
+  .reviews-total {
     max-width: 768px;
     margin: 0 auto;
   }
@@ -1594,7 +1622,6 @@ label {
     font-size: 48px;
     align-self: flex-start;
     margin-left: 0px;
-    
   }
 
   .review-card {
@@ -1634,7 +1661,7 @@ label {
     stroke: #414141;
     fill: rgba(255, 255, 255, 0.2);
   }
- /* sign up end */
+  /* sign up end */
 
   /* Tablet/Footer KUTLUHAN */
   .footer {
@@ -1685,16 +1712,16 @@ label {
 /* desktop */
 @media screen and (min-width: 1280px) {
   .with-us-container {
-      max-width: 80rem;
-      padding: 1.5rem 20px;
-  
-      margin-bottom: 9.375rem;
-    }
-  
-    .with-us-title {
-      font-size: 3.6875rem;
-      line-height: 4rem;
-    }
+    max-width: 80rem;
+    padding: 1.5rem 20px;
+
+    margin-bottom: 9.375rem;
+  }
+
+  .with-us-title {
+    font-size: 3.6875rem;
+    line-height: 4rem;
+  }
   #header {
     gap: 1.25rem;
     padding-bottom: 80px;
@@ -1729,7 +1756,7 @@ label {
     line-height: 100%;
     text-transform: uppercase;
 
-    color:rgba(255, 255, 255, 1);
+    color: rgba(255, 255, 255, 1);
   }
 
   .nav-links ul li a:hover {
@@ -1778,44 +1805,48 @@ label {
   /* hero end */
 
   /* about us */
-  #about-us{
-  max-width: 1280px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;   
-  margin-bottom: 30px;
+  #about-us {
+    max-width: 1280px;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
   }
+
   .about-us-container {
-  position: relative; 
-  max-width: 1280px;
-}
+    max-width: 1280px;
+  }
+
+  .aboutus-image-class {
+    flex-direction: row;
+    max-width: 1080px;
+    width: 100%;
+
+    margin-bottom: 100px;
+  }
+
+  .aboutus-image-class img {
+    max-width: 488px;
+    width: 100%;
+  }
+
   .about-us-container ul {
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    align-items: center;
-    margin: 0px 100px;
+    max-width: 552px;
   }
-  .about-us-container ul li:first-child img {
-    width: 600px;
-    height: 320px;
-    transform: scale(0.75);
-    display: block;
-    object-fit: none;
-    overflow: hidden;
-    border-radius: 250px;
-    position: absolute;
-    top: 90px;
-    left: 20px;
+  .about-us-container ul li {
+    max-width: 266px;
   }
 
   .about-us-texts {
     display: flex;
     flex-direction: row;
-    max-width: 575px;
-    margin-bottom: 100px;
+    max-width: 552px;
     gap: 20px;
-    margin-top: 45px;
   }
 
   .about-us-paragraph {
@@ -1823,9 +1854,6 @@ label {
     line-height: 20px;
     letter-spacing: -2%;
     margin: 0 auto;
-  }
-  .about-us-container h2 {
-    margin: 40px 100px;
   }
   /* about us end */
 
@@ -1840,7 +1868,7 @@ label {
   .courses-main {
     width: 100%;
     max-width: 1045px; /* 335 + 335 + 20(gap) = 690 → 704 güvenli */
-    margin: 20px auto;
+    margin: 0 auto 150px auto;
   }
 
   .courses-main > ul {
@@ -1974,7 +2002,6 @@ label {
     max-width: 1280px;
     margin: 0 auto;
     padding: 0px;
-    
   }
 
   .reviews {
@@ -2026,67 +2053,67 @@ label {
   /* reviews end */
 
   /* Desktop/Footer Kutluhan 1280 */
-    .footer {
-      background-image: url("../images/footer/Lines1280.png");
-      max-width: 1280px;
-    }
+  .footer {
+    background-image: url("../images/footer/Lines1280.png");
+    max-width: 1280px;
+  }
 
-    .footer-logo {
-      margin-bottom: 25px;
-      margin-left: 100px;
-    }
-  
-    .footer-container {
-      flex-direction: row;
-      justify-content: space-around;
-    }
-  
-    .footer-left {
-      max-width: 287px;
-      gap: 0px;
-      margin-right: 140px;
-    }
-  
-    .email-form input {
-      max-width: 216px;
-    }
-  
-    .email-form {
-      max-width: 276px;
-    }
-  
-    .footer-contact {
-      max-width: 287px;
-      margin-left: 100px;
-    }
-  
-    .footer-center {
-      max-width: 224px;
-      gap: 50px;
-      margin-right: 135px;
-    }
+  .footer-logo {
+    margin-bottom: 25px;
+    margin-left: 100px;
+  }
 
-    .footer-nav li {
-      margin-bottom: 20px 0;
-    }
-  
-    .footer-bottom {
-      max-width: 970px;
-      width: 100%;
-      justify-content: space-between;
-      margin-bottom: 25px;
-    }
-    
-    .footer-copyright {
-      margin-right: -100px;
-    }
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .footer-left {
+    max-width: 287px;
+    gap: 0px;
+    margin-right: 140px;
+  }
+
+  .email-form input {
+    max-width: 216px;
+  }
+
+  .email-form {
+    max-width: 276px;
+  }
+
+  .footer-contact {
+    max-width: 287px;
+    margin-left: 100px;
+  }
+
+  .footer-center {
+    max-width: 224px;
+    gap: 50px;
+    margin-right: 135px;
+  }
+
+  .footer-nav li {
+    margin-bottom: 20px 0;
+  }
+
+  .footer-bottom {
+    max-width: 970px;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 25px;
+  }
+
+  .footer-copyright {
+    margin-right: -100px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
-  #with-us{
+  #with-us {
     max-width: 1440px;
   }
-  .with-us-container{
+  .with-us-container {
     max-width: 1440px;
   }
   .header-container {
@@ -2096,7 +2123,7 @@ label {
   .nav-links ul {
     max-width: 550px;
   }
-  .logo{
+  .logo {
     padding-left: 50px;
   }
 
@@ -2104,34 +2131,33 @@ label {
 }
 
 @media screen and (min-width: 1440px) {
-  #about-us{
-  max-width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;   
-  margin-bottom: 30px;
+  #about-us {
+    max-width: 1440px;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
   }
+
   .about-us-container {
-  position: relative; 
-  max-width: 1440px;
+    max-width: 1440px;
   }
+
+  .aboutus-image-class {
+    max-width: 1240px;
+    width: 100%;
+  }
+
+  .aboutus-image-class img {
+    max-width: 560px;
+    width: 100%;
+  }
+
   .about-us-container ul {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    align-items: center;
-    margin: 0px 100px;
+    max-width: 630px;
   }
-  .about-us-container ul li:first-child img {
-    width: 670px;
-    height: 300px;
-    transform: scale(0.7);
-    display: block;
-    object-fit: cover;
-    overflow: hidden;
-    border-radius: 250px;
-    position: absolute;
-    top: 35px;
+  .about-us-container ul li {
+    max-width: 314px;
   }
 
   .about-us-texts {
@@ -2139,7 +2165,6 @@ label {
     flex-direction: row;
     max-width: 755px;
     gap: 30px;
-    padding: 20px 70px;
   }
 
   .about-us-paragraph {
@@ -2148,9 +2173,51 @@ label {
     letter-spacing: -2%;
     font-weight: 400px;
   }
-  .about-us-container h2 {
-    margin: 0px 100px;
+
+  /* our courses */
+  #our-courses {
+    max-width: 1440px;
+    width: 100%;
   }
+
+  .courses-top-desc {
+    width: 565px;
+  }
+  .courses-main {
+    max-width: 1240px;
+    width: 100%;
+  }
+  .courses-wrapper {
+    max-width: 1240px;
+    width: 100%;
+    padding: 0;
+  }
+
+  .courses-top {
+    max-width: 1240px;
+    margin-bottom: 50px;
+  }
+
+  .courses-cards-main {
+    max-width: 400px;
+    width: 400px;
+    height: 452px;
+  }
+
+  .courses-card-numberline {
+    max-width: 336px;
+  }
+
+  .courses-card-desc {
+    max-width: 336px;
+  }
+
+  .courses-main > ul {
+    max-width: 1240px;
+    width: 100%;
+    gap: 20px;
+  }
+  /* our courses end */
 
   /* our-mentors  */
   .our-mentors-container {
@@ -2202,7 +2269,7 @@ label {
   }
 
   .review-container {
-  width: 1240px;
+    width: 1240px;
   }
 
   .review-card {
@@ -2219,113 +2286,113 @@ label {
   /* reviews end */
 
   /* Desktop/Footer Kutluhan 1440 */
-        .footer {
-          background-image: url("../images/footer/lines1440.png");
-          max-width: 1440px;
-        }
-    
-        .footer-logo {
-          margin-bottom: 25px;
-          margin-left: 100px;
-        }
-    
-        .footer-container {
-          flex-direction: row;
-          justify-content: space-around;
-        }
-    
-        .footer-left {
-          max-width: 287px;
-          gap: 0px;
-          margin-right: 196px;
-        }
-    
-        .email-form input {
-          max-width: 216px;
-        }
-    
-        .email-form {
-          max-width: 276px;
-        }
-    
-        .footer-contact {
-          max-width: 287px;
-          margin-left: 100px;
-        }
-    
-        .footer-center {
-          max-width: 274px;
-          gap: 100px;
-          margin-right: 191px;
-        }
-    
-        .footer-nav li {
-          margin-bottom: 20px 0;
-        }
-    
-        .footer-bottom {
-          max-width: 1140px;
-          width: 100%;
-          justify-content: space-between;
-          margin-bottom: 25px;
-        }
-    
-        .footer-copyright {
-          margin-right: -100px;
-        }
-  
-        .footer {
-          background-image: url("../images/footer/lines1440.png");
-          max-width: 1440px;
-        }
-    
-        .footer-logo {
-          margin-bottom: 25px;
-          margin-left: 100px;
-        }
-    
-        .footer-container {
-          flex-direction: row;
-          justify-content: space-around;
-        }
-    
-        .footer-left {
-          max-width: 287px;
-          gap: 0px;
-          margin-right: 196px;
-        }
-    
-        .email-form input {
-          max-width: 216px;
-        }
-    
-        .email-form {
-          max-width: 276px;
-        }
-    
-        .footer-contact {
-          max-width: 287px;
-          margin-left: 100px;
-        }
-    
-        .footer-center {
-          max-width: 274px;
-          gap: 100px;
-          margin-right: 191px;
-        }
-    
-        .footer-nav li {
-          margin-bottom: 20px 0;
-        }
-    
-        .footer-bottom {
-          max-width: 1140px;
-          width: 100%;
-          justify-content: space-between;
-          margin-bottom: 25px;
-        }
-    
-        .footer-copyright {
-          margin-right: -100px;
-        }
-      }
+  .footer {
+    background-image: url("../images/footer/lines1440.png");
+    max-width: 1440px;
+  }
+
+  .footer-logo {
+    margin-bottom: 25px;
+    margin-left: 100px;
+  }
+
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .footer-left {
+    max-width: 287px;
+    gap: 0px;
+    margin-right: 196px;
+  }
+
+  .email-form input {
+    max-width: 216px;
+  }
+
+  .email-form {
+    max-width: 276px;
+  }
+
+  .footer-contact {
+    max-width: 287px;
+    margin-left: 100px;
+  }
+
+  .footer-center {
+    max-width: 274px;
+    gap: 100px;
+    margin-right: 191px;
+  }
+
+  .footer-nav li {
+    margin-bottom: 20px 0;
+  }
+
+  .footer-bottom {
+    max-width: 1140px;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 25px;
+  }
+
+  .footer-copyright {
+    margin-right: -100px;
+  }
+
+  .footer {
+    background-image: url("../images/footer/lines1440.png");
+    max-width: 1440px;
+  }
+
+  .footer-logo {
+    margin-bottom: 25px;
+    margin-left: 100px;
+  }
+
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .footer-left {
+    max-width: 287px;
+    gap: 0px;
+    margin-right: 196px;
+  }
+
+  .email-form input {
+    max-width: 216px;
+  }
+
+  .email-form {
+    max-width: 276px;
+  }
+
+  .footer-contact {
+    max-width: 287px;
+    margin-left: 100px;
+  }
+
+  .footer-center {
+    max-width: 274px;
+    gap: 100px;
+    margin-right: 191px;
+  }
+
+  .footer-nav li {
+    margin-bottom: 20px 0;
+  }
+
+  .footer-bottom {
+    max-width: 1140px;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 25px;
+  }
+
+  .footer-copyright {
+    margin-right: -100px;
+  }
+}
