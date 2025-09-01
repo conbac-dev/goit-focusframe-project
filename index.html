@@ -18,66 +18,85 @@
 </head>
 
 <body>
-  <div class="container">
-    <!-- header -->
-    <header>
-      <div class="header-container"></div>
+  <!-- header -->
+  <header id="header">
+  
+    <!-- header-container -->
+    <div class="header-container">
+  
       <!-- header left -->
       <div class="logo">
         <a href="#">Focus.Frame</a>
       </div>
       <!-- header left end -->
+  
       <!-- header right -->
       <div class="menu-container">
+  
         <!-- toggle checkbox -->
-        <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox" />
+        <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox">
         <!-- toggle checkbox end -->
+  
         <!-- svg icons -->
-        <div class="camera-icon-div">
-          <label class="camera-label">
-            <svg class="camera-icon">
-              <use href="./src/images/icons.svg#camera"></use>
-            </svg>
-          </label>
-        </div>
+        <label class="camera-label">
+          <svg class="camera-icon">
+            <use href="./src/images/icons.svg#camera"></use>
+          </svg>
+        </label>
+  
         <label for="menu-toggle" class="hamburger-menu-label">
           <svg class="hamburger-menu-icon">
             <use href="./src/images/icons.svg#hamburger-menu"></use>
           </svg>
         </label>
-      </div>
-
-      <div>
+  
         <label for="menu-toggle" class="close-menu-label">
           <svg class="close-menu-icon">
             <use href="./src/images/icons.svg#close"></use>
           </svg>
         </label>
-
         <!-- svg icons end -->
+  
         <!-- links -->
         <nav class="nav-links">
           <ul>
-            <li><a href="#about-us">About Us</a></li>
-            <li><a href="#our-courses">Our Courses</a></li>
-            <li><a href="#our-mentors">Our Mentors</a></li>
-            <li><a href="#reviews">Reviews</a></li>
-            <li><a href="#footer">Contacts</a></li>
+            <li>
+              <a href="#about-us">About Us</a>
+            </li>
+            <li>
+              <a href="#our-courses">Our Courses</a>
+            </li>
+            <li>
+              <a href="#our-mentors">Our Mentors</a>
+            </li>
+            <li>
+              <a href="#reviews">Reviews</a>
+            </li>
+            <li>
+              <a href="#footer">Contacts</a>
+            </li>
           </ul>
         </nav>
         <!-- links end -->
+  
+        <picture>
+          <source srcset="./src/images/header/header-hero-image-2.png" media="(min-width: 768px)">
+  
+          <img class="mobile-image" src="./src/images/header/header-hero-image-1.png" alt="camera">
+        </picture>
+  
       </div>
-
-      <img class="mobile-image" src="./src/images/header/au-mobile.jpg" alt="camera" />
-
-      <div class="sign-up">
-        <button class="sign-up-button" type="button">Sign up</button>
-      </div>
-
       <!-- header right end -->
-    </header>
-    <!-- header end -->
-  </div>
+  
+    </div>
+  
+    <button class="header-button">
+      SIGN UP
+    </button>
+    <!-- header-container end -->
+  
+  </header>
+  <!-- header end -->
 
   <main>
     <!-- hero -->
@@ -125,16 +144,20 @@
     </section>
     <!-- hero end -->
 
-    <!-- Master your photography skills with us! kısmı -->
-    <section class="photography-skills">
-      <h1 class="photography-title">
-        <span class="title-brown">MASTER </span>
-        <span span class="title-white">YOUR PHOTOGRAPHY </span>
-        <span class="title-brown">SKILLS WITH US!</span>
-      </h1>
-    </section>
-    <!-- Master your photography skills with us! kısmı end -->
-
+  <!-- with us -->
+  <section id="with-us" class="container">
+  
+    <div class="with-us-container">
+  
+      <p class="with-us-title">
+        <span>Master&nbsp;</span>
+        your photography&nbsp;
+        <span>skills with us!</span>
+      </p>
+  
+    </div>
+  </section>
+  <!-- with us end -->
 
     <!-- About Us -->
     <section id="about-us">
@@ -173,7 +196,7 @@
     </section>
     <!-- About Us end -->
 
-    <section>
+    <section id="our-courses">
       <!-- Genel kapsayıcı div ekliyoruz class courses-wrapper -->
       <div class="courses-wrapper">
         <!-- Başlık ve kartları kapsayan ana blok -->
@@ -199,9 +222,10 @@
                     <!-- burada numara ve iconu 2 div yapıp space-between ile 2 uca gönderdik -->
                     <div class="courses-card-number">01</div>
                     <div class="courses-card-svg">
+                      <a href="#sign-up">
                       <svg class="vektor-ok" viewBox="0 0 32 32">
                         <use href="./src/images/icons.svg#icon-arrow2"></use>
-                      </svg>
+                      </svg></a>
                     </div>
                   </div>
                   <div class="courses-card-title">Basics of photography</div>
@@ -220,9 +244,10 @@
                   <div class="courses-card-numberline">
                     <div class="courses-card-number">02</div>
                     <div class="courses-card-svg">
+                      <a href="#sign-up">
                       <svg class="vektor-ok" viewBox="0 0 32 32">
                         <use href="./src/images/icons.svg#icon-arrow2"></use>
-                      </svg>
+                      </svg></a>
                     </div>
                   </div>
                   <div class="courses-card-title">Landscape photography</div>
@@ -241,9 +266,10 @@
                   <div class="courses-card-numberline">
                     <div class="courses-card-number">03</div>
                     <div class="courses-card-svg">
+                      <a href="#sign-up">
                       <svg class="vektor-ok" viewBox="0 0 32 32">
                         <use href="./src/images/icons.svg#icon-arrow2"></use>
-                      </svg>
+                      </svg></a>
                     </div>
                   </div>
                   <div class="courses-card-title">Portrait photography</div>
@@ -326,7 +352,7 @@
     <!-- our mentors end -->
 
     <!-- sign up -->
-    <section class="signup-section">
+    <section id="sign-up" class="signup-section">
       <div class="sgn-desktop-container">
         <div class="sgn-container">
           <h1 class="sign-title">Sign <span class="sgn-up-title">Up</span></h1>
@@ -352,7 +378,7 @@
             </div>
             <button class="sgn-send-button">SEND</button>
             <p class="sgn-form-note">
-              By clicking on “Send” button, you agree to our
+              By clicking on "Send" button, you agree to our
               <a href="" class="sgn-privacy-link">Privacy Policy</a>, and allow
               Promodo to use this information for marketing purposes.
             </p>
@@ -371,7 +397,7 @@
 
 
     <!-- reviews -->
-    <section class="reviews-total">
+    <section id="reviews" class="reviews-total">
       <div class="reviews">
         <h2>Reviews</h2>
         <div class="review-container">
@@ -474,64 +500,55 @@
     <!-- reviews end -->
   </main>
 
-  <footer class=“footer”>
+  <footer id="footer" class="footer">
     <!-- Decorative Lines -->
-    <div class=“footer-lines”>
-      <img src=“./src/images/footer/Lines.png” alt=“Decorative lines” class=“lines-image” />
-    </div>
-    <div class=“footer-container”>
+<div class="footer-maincontainer">
+      <div class="footer-container">
       <!-- Left Section: Logo ve Adres Bilgileri -->
-      <div class=“footer-left”>
-        <div class=“footer-logo”>
+      <div class="footer-left">
+        <div class="footer-logo">
           <h2>Focus.Frame</h2>
         </div>
-        <div class=“footer-contact”>
-          <a href=“tel:+380665438912" class=“phone-link”>+38 066 543 8912</a>
-          <p class=“address”>
+        <div class="footer-contact">
+          <a href="tel:+380665438912" class="contact">+38 066 543 8912</a>
+          <p class="contact">
             1678 S. Pioneer Road Salt Lake City UT 84104
           </p>
         </div>
       </div>
       <!-- Center Section: Navigasyon Linkleri -->
-      <div class=“footer-center”>
-        <div class=“footer-column”>
-          <ul class=“footer-nav”>
-            <li><a href=“#instagram”>INSTAGRAM</a></li>
-            <li><a href=“#facebook”>FACEBOOK</a></li>
-            <li><a href=“#youtube”>YOUTUBE</a></li>
+      <div class="footer-center">
+          <ul class="footer-nav">
+            <li><a href="#instagram">INSTAGRAM</a></li>
+            <li><a href="#facebook">FACEBOOK</a></li>
+            <li><a href="#youtube">YOUTUBE</a></li>
           </ul>
-        </div>
-        <div class=“footer-column”>
-          <ul class=“footer-nav”>
-            <li><a href=“#about”>ABOUT US</a></li>
-            <li><a href=“#courses”>OUR COURSES</a></li>
-            <li><a href=“#mentors”>OUR MENTORS</a></li>
-            <li><a href=“#reviews”>REVIEWS</a></li>
-            <li><a href=“#contacts”>CONTACTS</a></li>
+          <ul class="footer-nav">
+            <li><a href="#about">ABOUT US</a></li>
+            <li><a href="#courses">OUR COURSES</a></li>
+            <li><a href="#mentors">OUR MENTORS</a></li>
+            <li><a href="#reviews">REVIEWS</a></li>
+            <li><a href="#contacts">CONTACTS</a></li>
           </ul>
-        </div>
       </div>
       <!-- Right Section: Email Forumu -->
-      <div class=“footer-right”>
-        <form class=“email-form” action=“#” method=“POST”>
-          <div class=“form-group”>
-            <input type=“email” id=“email” name=“email” placeholder=“Enter your email”
-              pattern=“[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$” required class=“email-input” />
-            <button type=“submit” class=“submit-btn”>Go</button>
-          </div>
+        <form class="email-form" action="#" method="POST">
+            <input type="email" id="email" name="email" placeholder="Enter your email"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required class="email-input" />
+            <button type="submit" class="submit-btn">Go</button>
         </form>
-      </div>
     </div>
     <!-- Bottom Section: Privacy falan  -->
-    <div class=“footer-bottom”>
-      <div class=“footer-legal”>
-        <a href=“#privacy”>Privacy Policy</a>
-        <a href=“#offering”>Public Offering Agreement</a>
+    <div class="footer-bottom">
+      <div class="footer-legal">
+        <a class="policys" href="#privacy">Privacy Policy</a>
+        <a class="policys" href="#offering">Public Offering Agreement</a>
       </div>
-      <div class=“footer-copyright”>
+      <div class="footer-copyright">
         <p>2024 Focus Frame<br />© All rights reserved</p>
       </div>
     </div>
+</div>
   </footer>
 
 </body>
