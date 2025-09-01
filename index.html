@@ -31,13 +31,13 @@
       <!-- header left end -->
 
       <!-- header right -->
+      
       <div class="menu-container">
 
         <!-- toggle checkbox -->
-        <label class="menu-toggle-label">
+        
           <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox" aria-label="Toggle menu">
-          <span class="visually-hidden">Toggle menu</span>
-        </label>
+        <div class="menu-overlay"></div>
         <!-- toggle checkbox end -->
 
         <!-- svg icons -->
@@ -92,10 +92,9 @@
       <!-- header right end -->
 
     </div>
-    <a href="#sign-up" title="Sign up for our courses">
-    <button class="header-button">
+    <a class="header-button" href="#sign-up" title="Sign up for our courses">
       SIGN UP
-    </button></a>
+    </a>
     <!-- header-container end -->
 
   </header>
@@ -167,8 +166,19 @@
       <div class="about-us-container">
         <h2 class="dm-sans-bold">About<span>Us</span></h2>
         <div class="aboutus-image-class">
+          <picture>
+          <source srcset="./src/images/about-us/1440aboutus.png"
+            media="(min-width: 1440px)">
 
-          <img src="./src/images/about-us/aboutuscamera1x.png" alt="Camera Photo" />
+          <source srcset="./src/images/about-us/1280aboutus.png"
+            media="(min-width: 1280px)">
+
+          <source srcset="./src/images/about-us/768aboutus.png"
+            media="(min-width: 768px)">
+
+          <img
+            src="./src/images/about-us/aboutuscamera1x.png" alt="Camera Photo">
+        </picture>
           <!-- paragrafları kapsayan yeni div -->
           <ul class="about-us-texts">
             <li>

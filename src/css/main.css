@@ -106,6 +106,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 0.875rem;
+  
 }
 
 .menu-toggle-checkbox,
@@ -146,10 +147,23 @@ body {
   position: absolute;
   max-width: 13.625rem;
   width: 100%;
-
   top: 0px;
   right: 0px;
-  z-index: 1;
+  z-index: 100;
+
+}
+.menu-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(18, 18, 18, 0.4);
+  z-index: 99; /* Menüden daha düşük bir z-index değeri */
+}
+#menu-toggle:checked ~ .menu-overlay {
+  display: block;
 }
 
 #menu-toggle:checked ~ .nav-links ul {
@@ -185,7 +199,7 @@ body {
   position: absolute;
   top: 20px;
   right: 20px;
-  z-index: 2;
+  z-index: 101;
 }
 
 #menu-toggle:checked ~ picture .mobile-image {
@@ -195,6 +209,7 @@ body {
   z-index: 2;
   top: 30.1875rem;
   right: 0px;
+  z-index: 100;
 }
 /* hero */
 #header {
@@ -572,7 +587,7 @@ li {
 }
 
 .courses-card-title {
-  max-width: 279px;
+  max-width: 255px;
   margin: 28px 28px 28px 28px;
   font-weight: 500;
   font-size: 28px;
