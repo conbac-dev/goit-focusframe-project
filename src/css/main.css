@@ -437,7 +437,7 @@ body {
   font-size: 28px;
   font-weight: 500;
   line-height: 32px;
-  letter-spacing: -4%;
+  letter-spacing: -0.04em;
 
   align-self: flex-start;
 }
@@ -528,7 +528,7 @@ li {
   font-size: 28px;
   line-height: 32px;
   color: #ffffff;
-  letter-spacing: -4%;
+  letter-spacing: -0.04em;
 }
 .courses-top-title span {
   color: #bea69e;
@@ -592,7 +592,6 @@ li {
   font-weight: 500;
   font-size: 28px;
   line-height: 32px;
-  letter-spacing: 0%;
 }
 .courses-card-desc {
   max-width: 279px;
@@ -635,7 +634,7 @@ li {
   font-weight: 500;
   font-size: 28px;
   line-height: 54px;
-  letter-spacing: -4%;
+  letter-spacing: -0.04em;
   color: #ffffff;
 }
 
@@ -682,7 +681,7 @@ li {
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
-  letter-spacing: -2%;
+  letter-spacing: -0.02em;
 
   color: rgba(255, 255, 255, 0.5);
 }
@@ -863,7 +862,7 @@ label {
 
   .reviews h2 {
     font-size: 28px;
-    font-weight: 500px;
+    font-weight: 500;
     color: #ffffff;
     letter-spacing: -0.04em;
     font-family: "DM Sans", sans-serif;
@@ -917,7 +916,7 @@ label {
   .review-info h3 {
     margin: 0;
     font-size: 20px;
-    font-weight: 500px;
+    font-weight: 500;
     font-family: "DM Sans", sans-serif;
     color: rgba(255, 255, 255, 1);
   }
@@ -926,7 +925,7 @@ label {
     margin: 0;
     font-size: 12px;
     color: rgba(255, 255, 255, 0.5);
-    font-weight: 400px;
+    font-weight: 400;
     font-family: "DM Sans", sans-serif;
     letter-spacing: -0.02em;
   }
@@ -955,7 +954,7 @@ label {
     line-height: 1.28571;
     letter-spacing: -0.02em;
     color: rgba(255, 255, 255, 1);
-    font-weight: 400px;
+    font-weight: 400;
     font-family: "DM Sans", sans-serif;
     margin: 0px;
     padding: 0;
@@ -999,7 +998,7 @@ label {
 
   .reviews h2 {
     font-size: 28px;
-    font-weight: 500px;
+    font-weight: 500;
     color: #ffffff;
     letter-spacing: -0.04em;
     font-family: "DM Sans", sans-serif;
@@ -1051,7 +1050,7 @@ label {
   .review-info h3 {
     margin: 0;
     font-size: 20px;
-    font-weight: 500px;
+    font-weight: 500;
     font-family: "DM Sans", sans-serif;
     color: rgba(255, 255, 255, 1);
   }
@@ -1060,7 +1059,7 @@ label {
     margin: 0;
     font-size: 12px;
     color: rgba(255, 255, 255, 0.5);
-    font-weight: 400px;
+    font-weight: 400;
     font-family: "DM Sans", sans-serif;
     letter-spacing: -0.02em;
   }
@@ -1089,7 +1088,7 @@ label {
     line-height: 1.28571;
     letter-spacing: -0.02em;
     color: rgba(255, 255, 255, 1);
-    font-weight: 400px;
+    font-weight: 400;
     font-family: "DM Sans", sans-serif;
     margin: 0px;
     padding: 0;
@@ -1174,7 +1173,6 @@ label {
   line-height: 100%;
   text-transform: uppercase;
   font-size: 14px;
-  letter-spacing: 0%;
 }
 
 .email-form {
@@ -1216,7 +1214,6 @@ label {
 .policys {
   font-weight: 400;
   line-height: 16px;
-  letter-spacing: 0%;
   color: #ffffff;
   font-size: 12px;
 }
@@ -1226,7 +1223,6 @@ label {
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
-  letter-spacing: 0%;
 }
 /* Mobile/Footer KUTLUHAN */
 
@@ -1867,7 +1863,7 @@ label {
   .about-us-paragraph {
     font-size: 16px;
     line-height: 20px;
-    letter-spacing: -2%;
+    letter-spacing: -0.02em;
     margin: 0 auto;
   }
   /* about us end */
@@ -2108,10 +2104,6 @@ label {
     margin-right: 135px;
   }
 
-  .footer-nav li {
-    margin-bottom: 20px 0;
-  }
-
   .footer-bottom {
     max-width: 970px;
     width: 100%;
@@ -2185,8 +2177,8 @@ label {
   .about-us-paragraph {
     font-size: 16px;
     line-height: 20px;
-    letter-spacing: -2%;
-    font-weight: 400px;
+    letter-spacing: -0.02em;
+    font-weight: 400;
   }
 
   /* our courses */
@@ -2341,10 +2333,6 @@ label {
     margin-right: 191px;
   }
 
-  .footer-nav li {
-    margin-bottom: 20px 0;
-  }
-
   .footer-bottom {
     max-width: 1140px;
     width: 100%;
@@ -2394,10 +2382,6 @@ label {
     max-width: 274px;
     gap: 100px;
     margin-right: 191px;
-  }
-
-  .footer-nav li {
-    margin-bottom: 20px 0;
   }
 
   .footer-bottom {
