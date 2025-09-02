@@ -138,7 +138,7 @@
 <p>This project was developed collaboratively as part of the GoIT group project.</p>
 
 <ul>
-  <li><strong>Team Leader:</strong> Emerald Saka</li>
+  <li><strong>Team Leader:</strong> Emiralp Saka</li>
   <li><strong>Scrum Master:</strong> Esra Aras</li>
 </ul>
 
@@ -149,7 +149,7 @@
   <li><strong>About Us:</strong> Emiralp Saka</li>
   <li><strong>Our Courses:</strong> Ali Kemal Demir</li>
   <li><strong>Our Mentors:</strong> Rıdvan Kesken</li>
-  <li><strong>Sign Up:</strong> Nur Seda</li>
+  <li><strong>Sign Up:</strong> Nur Seda Ağgünlü</li>
   <li><strong>Reviews:</strong> Gülnihan Yazıcı</li>
   <li><strong>Footer:</strong> Kutluhan Gül</li>
 </ul>
@@ -182,3 +182,4 @@
   This project is created for <strong>educational purposes</strong> under the GoIT Full Stack Developer course.
   <br />© 2024 Focus.Frame — All rights reserved
 </p>
+
