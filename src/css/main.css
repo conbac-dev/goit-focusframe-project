@@ -106,7 +106,6 @@ body {
   justify-content: center;
   align-items: center;
   gap: 0.875rem;
-  
 }
 
 .menu-toggle-checkbox,
@@ -150,7 +149,6 @@ body {
   top: 0px;
   right: 0px;
   z-index: 100;
-
 }
 .menu-overlay {
   display: none;
@@ -385,6 +383,8 @@ body {
   padding: 1.25rem 0;
 
   margin-bottom: 5rem;
+
+  overflow: hidden;
 }
 
 .with-us-title {
@@ -1405,7 +1405,6 @@ label {
     font-size: 2.5rem;
     line-height: 3.125rem;
     letter-spacing: 0.06rem;
-    
   }
   /* about us */
 
